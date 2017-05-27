@@ -17,7 +17,7 @@ namespace LogLib
         public void WriteToFile(LogModel log,string path)
         {
             string filename =path+log.CreateTime.ToString("yyyy-MM-dd") + ".txt";
-            using (StreamWriter write = new StreamWriter(filename))
+            using (StreamWriter write = new StreamWriter(filename,true))
              {
                 write.WriteLine(log.Title);
                 write.WriteLine(log.Summary);

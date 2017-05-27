@@ -24,9 +24,9 @@ namespace MyNote
             string filename = @"D:\study\log\"+ this.selectedDate.SelectionStart.ToString("yyyy-MM-dd") + ".txt";           
             LogManager manager = new LogManager();
             LogModel log = manager.ReadLog(filename);
-            this.main.title.Text = log.Title.Replace("\r\n", "");
-            this.main.summary.Text = log.Summary.Replace("\r\n", "");
-            this.main.content.Text = log.Content.Replace("\r\n","\n");
+            this.main.title.Text = log.Title.Replace("\r\n", "").Substring(6);
+            this.main.summary.Text = log.Summary.Replace("\r\n", "").Substring(8);
+            this.main.content.Text = log.Content.Replace("\r\n","\n").Substring(10);
             this.Close();
         }
     }

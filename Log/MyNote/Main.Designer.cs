@@ -84,7 +84,7 @@
             this.write.Name = "write";
             this.write.Size = new System.Drawing.Size(103, 47);
             this.write.TabIndex = 0;
-            this.write.Text = "编写日志";
+            this.write.Text = "新建日志";
             this.write.UseVisualStyleBackColor = true;
             this.write.Click += new System.EventHandler(this.write_Click);
             // 
@@ -93,7 +93,7 @@
             this.save.Location = new System.Drawing.Point(388, 468);
             this.save.Name = "save";
             this.save.Size = new System.Drawing.Size(68, 24);
-            this.save.TabIndex = 4;
+            this.save.TabIndex = 3;
             this.save.Text = "保存日志";
             this.save.UseVisualStyleBackColor = true;
             this.save.Click += new System.EventHandler(this.save_Click);
@@ -103,8 +103,9 @@
             this.content.Location = new System.Drawing.Point(68, 98);
             this.content.Name = "content";
             this.content.Size = new System.Drawing.Size(388, 366);
-            this.content.TabIndex = 3;
+            this.content.TabIndex = 2;
             this.content.Text = "";
+            this.content.Enter += new System.EventHandler(this.content_Enter);
             // 
             // contentLab
             // 
@@ -136,7 +137,7 @@
             this.title.Location = new System.Drawing.Point(67, 16);
             this.title.Name = "title";
             this.title.Size = new System.Drawing.Size(389, 21);
-            this.title.TabIndex = 1;
+            this.title.TabIndex = 0;
             // 
             // titleLab
             // 
