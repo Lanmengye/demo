@@ -1,7 +1,13 @@
 ## 目录
-- [ajax方法](#title1)
+- [load方法](#load)
+- [get方法](#get)
+- [post方法](#post)
+- [ajax方法](#ajax)
+- [getJSON方法](#getJSON)
+- [getScript方法](#getScript)
+- [serialize方法](#serialize)
 
-## load 
+## <a name="load"></a>load() 
 概述：load() 方法通过 AJAX 请求从服务器加载数据，并把返回的数据放置到指定的元素中。    
 语法：load(url,data,function(response,status,xhr))    
 参数描述：
@@ -12,7 +18,7 @@
      - status - 包含请求的状态（"success", "notmodified", "error", "timeout" 或 "parsererror"）
      - xhr - 包含 XMLHttpRequest 对象     
      
-## $.get()
+## <a name="get"></a>$.get()
 概述：通过远程 HTTP GET请求载入信息。请求成功时可调用回调函数。如果需要在出错时执行函数，请使用 $.ajax。    
 语法：jQuery.get(url, [data], [callback], [type])
 参数描述：
@@ -21,7 +27,7 @@
 - callback -载入成功时回调函数。
 - type -返回内容格式，xml, html, script, json, text, _default。   
  
-## $.post()
+## <a name="post"></a>$.post()
 概述：通过远程 HTTP POST 请求载入信息。
 请求成功时可调用回调函数。如果需要在出错时执行函数，请使用 $.ajax。    
 语法：jQuery.post(url, [data], [callback], [type])    
@@ -31,7 +37,7 @@
 - callback -发送成功时回调函数。
 - type -返回内容格式，xml, html, script, json, text, _default。
 
-## $.ajax()<a name="title1"></a>
+## <a name="ajax"></a>$.ajax()
 概述：ajax() 方法通过 HTTP 请求加载远程数据。
 语法：jQuery.ajax([settings])
 参数描述：
@@ -46,7 +52,7 @@
 - success: 请求成功后调用的函数
 - error: 请求失败时调用的函数
 
-## $.getJSON()
+## <a name="getJSON"></a>$.getJSON()
 概述：通过 HTTP GET 请求载入 JSON 数据。在 jQuery 1.2 中，您可以通过使用JSONP形式的回调函数来加载其他网域的JSON数据（跨域请求）
 语法：jQuery.getJSON(url, [data], [callback])    
 参数描述：
@@ -54,12 +60,12 @@
 - data -待发送 Key/value 参数。
 - callback -载入成功时回调函数。    
 
-## $.getScript()
+## <a name="getScript"></a>$.getScript()
 概述：通过 HTTP GET 请求载入并执行一个 JavaScript 文件。    
 语法：$.getScript(url,[callback])    
 参数描述：
 - url -待载入 JS 文件地址。
 - callback -成功载入后回调函数。
 
-## serialize()
+## <a name="serialize"></a>serialize()
 序列表单、表格内容为查询字符串。
