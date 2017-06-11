@@ -4,3 +4,5 @@
    SportsStore是参照《精通ASP.NET MVC5》一书编写的一个实例项目，主要用于熟悉ASP.NET MVC5。
 ## Log项目
    Log是为熟悉c#文件操作，同时为了记录日志而写的一款基于WinForm软件。
+## notes
+   notes用于存放学习笔记文档的文件夹
