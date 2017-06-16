@@ -3,8 +3,8 @@
 - [stuff函数的用法](#stuff)
 
 ### <a name="xml"></a> for xml path
-例：表中原始数据如下
-![原始数据](images/RawData.png)    
+例：表中原始数据如下    
+![原始数据](images/RawData.png)              
 利用 ```for xml path```函数可以输出XML格式的查询结果，代码如下：
 ```sql
 SELECT TOP 3 *
@@ -61,8 +61,8 @@ SELECT  Category AS '类目名称',
 FROM    dbo.Products AS p
 GROUP BY p.Category;
 ```
-执行结果如下：
-![处理后的数据](images/FinaData.png)  
+执行结果如下：     
+![处理后的数据](images/FinaData.png)        
 语句解释：
 1. 通过加入分隔符拼接字符串可以使xml格式的结果变成字符串
 2. 通过STUFF函数可以去除结果中的第一个字符(,)
