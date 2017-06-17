@@ -1,0 +1,99 @@
+
+.zhengweng
+{
+	width: 855px;
+	height: 480px;
+	text-align: center;
+	margin: 0px auto;
+	margin-top: 32px;
+	background-color: white;
+}
+.chenggong
+{
+	display: block;
+}
+.chenggong>p
+{
+	font-size: 24px;
+	margin-top: 48px;
+	margin-bottom: 70px;
+}
+.chenggong :nth-child(4)
+{
+	width: 330px;
+	text-indent: 10px;
+	font-size: 12px;
+	font-weight: bold;
+	color: #696969;
+	margin: 0px auto;
+	margin-top: 20px;
+	margin-bottom: 40px;
+}
+
+
+.denglu>input
+{
+	display: none;
+}
+.denglu>label
+{
+	display: block;
+	width: 330px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	text-indent: 5px;
+	margin: 0px auto;
+	margin-top: 20px;
+	color: white;
+	background-color: #FF6700;
+	border: 1px solid #ddd;
+	cursor: pointer;
+}
+
+.submit>label:hover
+{
+	opacity: 0.7;
+}
+
+
+.footer
+{
+	width: 855px;
+	margin: 0px auto;
+	text-align: center;
+}
+.footer>ul
+{
+	display:flex;
+	margin: 15px auto;
+	margin-top: 40px;
+	justify-content: center;
+}
+.footer>ul span
+{
+	color: #AAAAAA;
+	margin-left: 10px;
+	margin-right: 10px;
+} 
+.footer>ul>li:not(:first-child)>a
+{
+	color:#696969 ;
+}
+.footer>ul>li:not(:first-child)>a:hover
+{
+	color: black;
+}
+.footer>p>span,.footer>p>span>a
+{
+	color: #aaa;
+}
+
+
+
+
+
+
+
+
+

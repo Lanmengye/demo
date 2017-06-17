@@ -1,0 +1,456 @@
+/******************************全局设置*****************************/
+body
+{
+	margin:0px;
+	padding:0px;
+	font-size:14px;
+}
+a
+{
+	text-decoration:none;
+	color:#333;
+}
+.container
+{
+	width:950px;
+	margin:0px auto;
+}
+/*******************************头部**********************************/
+.top
+{
+	width:100%;
+	height:20px;
+	line-height:20px;
+	background-color:#333;
+	color:#fff;
+}
+.top>div
+{
+	text-align:right;
+}
+.top a
+{
+	color:#fff;
+}
+.top>div>div>span:nth-child(2)
+{
+	color:darkgray;
+	padding: 0 10px;
+}
+/***********************************LOGO********************************/
+.top+div
+{
+	width:100%;
+	height:60px;
+	line-height:60px;
+}
+.logo
+{
+	border-bottom:#ccc 1px solid;
+}
+.logo>img
+{
+	vertical-align:middle;
+	cursor: pointer;
+	border-right:1px solid #999;
+}
+.logo>span
+{
+	padding-left:10px;
+	color:#666;
+}
+.content
+{
+	background-color:#eee;
+
+}
+/***********************************交易*****************************************/
+#span1
+{
+	color: orange;
+}
+.jiaoyi
+{
+	width: 900px;
+	padding-top: 20px;
+	padding-left: 25px;
+	padding-right: 25px;
+	position:relative;
+	border-bottom:2px solid #bbb;
+	height: 75px;
+	position: relative;
+}
+.jiaoyi>div:first-child>div>span:first-child,#spmc
+{
+	color: #33f;
+	cursor: pointer;
+}
+.jiaoyi>div:first-child>span:first-of-type
+{
+	font-weight: bold;
+	display: inline-block;
+	margin: 8px 0px;
+}	
+.jiaoyi>div:nth-child(2)
+{
+	position: absolute;
+	right:25px;
+	top:32px;
+	text-align: right;
+	z-index: 3;
+}
+.jiaoyi>div:nth-child(2)>div>span
+{
+	color: #f60;
+	font-size: 18px;
+	font-weight: bold;
+	padding-right: 5px;
+}
+.jiaoyi>div:nth-child(2)>div:last-child
+{
+	margin-top: 20px;
+	margin-left: 30px;
+	width: 60px;
+	background-color: #999;
+	color: #fff;
+	font-weight: bold;
+	cursor: pointer;
+}
+.jiaoyi>div:nth-child(3)
+{
+	width: 100%;
+	border-bottom:2px solid #bbb;
+	background-color:#eee;
+	position: absolute;
+	top:75px;
+	left:0px;
+	z-index: 2;
+}
+#xiangqing
+{
+	padding-left: 25px;
+	line-height:18px;
+	font-size: 12px;
+	display: block;
+}
+#xiangqing>label
+{
+	display: inline-block;
+	width: 60px;
+}
+#xiangqing+div
+{
+	position: absolute;
+	right: 25px;
+	width: 60px;
+	background-color: #999;
+	color: #fff;
+	font-weight: bold;
+	cursor: pointer;
+}
+#wen
+{
+	background-color:#fff ;
+	position: absolute;
+	width: 340px;
+	line-height: 20px;
+	font-size: 12px;
+	padding: 10px;
+	top:10px;	
+	left:185px;
+	box-shadow: 1px 1px 1px #ccc;
+	z-index: 5;
+	display: none;
+}
+#wen>div
+{
+	font-weight: bold;
+}
+
+/**********************************付款***************************************/
+.jiaoyi+div
+{
+	height: 525px;
+	overflow: hidden;
+	display: flex;
+	border-bottom: 2px solid #bbb;
+
+}
+#fkfs>div
+{
+	width: 1900px;
+	display: flex;
+}
+.saoyisao
+{
+	width: 950px;
+	display: flex;
+}
+.saoyisao>div:first-child
+{
+	width: 805px;
+	background-color: #fff;
+}
+.saoyisao .neirong
+{
+	text-align: center;
+	width:180px;
+	display: inline-block;
+	margin: 78px 0px;
+	margin-left: 310px;
+}
+.neirong>div:nth-child(2)
+{
+	font-size: 24px;
+	color: #f60;
+	font-weight: bold;
+	margin-bottom: 25px;
+
+}
+.neirong>div:nth-child(2)+div
+{
+	box-shadow:1px 1px 2px 1px #999;
+}
+.saoyisao>div:last-child
+{
+	width: 144px;
+	border-left: #ccc solid 1px;
+	background-color: #ccf;
+}
+.erweima
+{
+	position: relative;
+	height: 180px;
+}
+.erweima>img:last-child
+{
+	display: block;
+	position: absolute;
+	top:50%;
+	left:50%;
+	margin-left: -22px;
+	margin-top: -22px;
+}
+.sao
+{
+	display: flex;
+	padding: 0px 30px 10px;
+}
+.sao>span
+{
+	font-size: 12px;
+}
+.neirong>div:last-child
+{
+	margin-top: 10px;
+}
+.neirong>div:last-child>a
+{
+	font-size: 12px;
+	color: #999;
+	text-decoration: underline;
+}
+.neirong+div
+{
+	width: 205px;
+	height: 200px;
+	display: inline-block;
+	margin-top: 50px;
+	vertical-align: top;
+}
+.neirong+div>div
+{
+	cursor:pointer;
+}
+.neirong+div>div:last-child
+{
+	display: none;
+}
+.saoyisao>div:last-child
+{
+	padding-top: 175px;
+	background-color: #ddd;
+	text-align: center;
+}
+.saoyisao>div:last-child>div:last-child
+{
+	background-color: #0af;
+	width: 108px;
+	height: 35px;
+	line-height: 35px;
+	color: #fff;
+	border-radius: 5px;
+	margin: 20px auto;
+	cursor: pointer;
+}
+
+
+
+/***************************支付宝账号登录**************************************/
+.denglu
+{
+	width: 950px;
+	height: 525px;
+	display: flex;
+	justify-content: space-between;
+}
+.denglu>div:last-child
+{
+	width: 805px;
+	background-color: #fff;
+}
+.denglu a
+{
+	text-decoration: none;
+}
+.denglu1
+{
+	width: 145px;
+	padding-top: 150px;
+	display: block;
+	background-color: #ddd;
+	text-align: center;
+}
+.denglu1>span
+{
+	color: #555;
+	display: block;
+	margin-bottom: 20px;
+}
+.denglu1 :nth-child(2)
+{
+	width: 40px;
+	height: 60px;
+	margin-top: 10px;
+	background-color: #aaa;
+	margin: 0px auto;
+	margin-bottom: 20px;
+	border-radius: 3px;
+	display: block;
+}
+.denglu1 :nth-child(2)>img
+{
+	margin-top: 10px;
+}
+.denglu1 :nth-child(2)>span
+{
+	width: 8px;
+	height: 8px;
+	margin-top: 4px;
+	display: block;
+	border-radius: 4px;
+	background-color: #FFFFFF;
+}
+.denglu1>div:last-child
+{
+	width: 110px;
+	height: 38px;
+	line-height: 38px;
+	margin: 0px auto;
+	background-color: #00AEEF;
+	border-radius: 5px;
+	color: #fff;
+	cursor: pointer;
+}
+.denglu2
+{
+	width: 353px;
+	margin: 0px auto;
+	margin-top: 66px;
+	vertical-align: middle;
+}
+.bao1
+{
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 2px solid #ddd;
+	padding-bottom: 3px;
+	margin-bottom: 32px;
+}
+.bao1>span:first-child
+{
+	font-size: 18px;
+}
+.bao1>span:last-child>a
+{
+	font-size: 14px;
+	color: #1589CA;
+	font-weight: bold;
+}
+.bao2
+{
+	display: block;
+}
+.bao2>div:first-child
+{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 5px;
+}
+.bao2>div:first-child>label
+{
+	font-size: 14px;
+	color: #444;
+}
+.bao2>div:first-child>span>a
+{
+	font-size: 12px;
+	color: #1589CA;
+}
+.bao2>input
+{
+	width: 350px;
+	height: 38px;
+	text-indent: 5px;
+	border: 1px solid #ddd;
+	margin-bottom: 35px;
+	border-radius: 3px;
+}
+#pwd>input
+{
+	margin-bottom: 0px;
+}
+#err
+{
+	color:#f30;
+}
+.bao3
+{
+	font-size: 12px;
+	margin-top: 8px;
+	margin-bottom: 20px;
+	color: #696969;
+}
+.bao3>span
+{
+	color: red;
+}
+
+
+
+
+
+
+
+
+/*********************************尾部*********************************/
+footer
+{
+	padding-top: 30px;
+	height: 115px;
+	text-align: center;
+}
+footer>div
+{
+	margin-bottom: 30px;
+}
+
+
+
+
+
+
+
+
+
+

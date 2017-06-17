@@ -1,0 +1,155 @@
+/**********************网页头部信息*******************/
+header
+{
+	width: 100%;
+	background-color: #333;
+}
+header>.box
+{
+	height: 40px;
+	line-height: 40px;
+	color:rgba(255,255,255,0.1) ;
+}
+header>.box a
+{
+	color:rgba(255,255,255,0.6);
+	margin-left:1px ;
+	margin-right: 5px;
+	font-size: 12px;
+}
+header>.box>div>a:hover
+{
+	color: #fff;
+}
+header>.box>.div1>a:first-child 
+{
+	margin-left: 0px;
+}
+/*************************个人中心***********************************/
+.div2>ul>li>ul>li>a
+{
+	color: black;
+}
+.div2>.left
+{
+	display: flex;
+	margin-right: 25px;
+}
+.div2>ul>li>a,.div2>ul>li>div>a
+{
+	color: #999;
+}
+.div2>ul>li:first-child
+{
+	width:120px;
+	text-align:center ;
+	position: relative;
+}
+.div2>ul>li:first-child>div
+{
+	height: 40px;
+}
+.div2 li:first-child>ul
+{
+	height: 0px;
+	overflow: hidden;
+}
+.div2 li:first-child>div:hover>a
+{
+	color: #ff6700;
+}
+.div2 li:first-child:after a
+{
+	color: white;
+}
+.div2>ul>li:first-child:hover
+{
+	background-color: white;
+	
+}
+.div2 li:first-child:hover>ul
+{
+	position: absolute;
+	top:40px;
+	z-index: 2;
+	box-shadow: 3px 3px 5px 1px rgba(0,0,0,0.2);
+	padding-top: 10PX;
+	padding-bottom: 10px;
+	height: 150px;
+	border-radius: 2px;
+	-moz-transition: height .3s ease-in;
+}
+.div2 li:first-child>ul
+{
+	
+	background-color: #fff;
+}
+.div2 li:first-child>ul>li
+{
+	width: 120px;
+	height: 25px;
+	line-height: 30px;
+	padding-bottom: 5px;
+}
+.div2 li:first-child>ul>li:hover
+{
+	background-color:#DCDCDC;
+}
+.div2 li:first-child>ul>li:hover>a
+{
+	color: #ff6700;
+}
+.div2 li:first-child i
+{
+	padding-left: 5px;
+}
+.div2>ul>li:last-child>a
+{
+	padding-left: 10px;
+	border-left: 1px solid #ccc;
+}
+/********************************购物车****************************/
+.shoppingcart
+{
+	display: inline-block;
+	margin-top: -0.5px;
+	position: relative;
+}
+.div2>.shoppingcart>a
+{
+	margin: 0px;
+	display: inline-block;
+	width: 120px;
+	height: 40px;
+	background-color: #666;
+	text-align: center;
+}
+.div2>.shoppingcart>a>.igou
+{
+	padding-right: 3px;
+}
+.shoppingcart>div
+{   
+	width: 320px;
+	height: 100px;
+	line-height: 100px;
+	font-size: 12px;
+	text-align: center;
+	display: none;
+	background-color: #fff;
+}
+.div2>.shoppingcart:hover>a
+{
+	color: #ff6700;
+	background-color: #fff;	
+}
+.shoppingcart:hover>div
+{
+	display: block;
+	box-shadow: 2px 2px 2px #999;
+	position: absolute;
+	z-index: 2;
+	top:40px;
+	right: 0px;
+	color: #333;
+}

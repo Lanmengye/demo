@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>在线支付</title>
+		<link rel="stylesheet" type="text/css" href="css/pay.css"/>
+		<script src="js/payment.js"></script>
+	</head>
+	
+	<body onload="showtime();">
+		<div class="top">
+			<div class="container">
+				<div>
+					<span>您好欢迎使用支付宝付款</span>
+					<span>|</span>
+				    <a href="#">常见问题</a>
+				</div>
+			</div>
+		</div>
+		<div>
+			<div class="container logo">
+				<img src="img03/1.png" onclick="window.location.href='#'"/><span>我的收银台</span>
+			</div>
+		</div>
+		<div class="content">
+			<div class="container">
+				<div class="jiaoyi">
+					<div>
+						<div>
+							正在使用即时到账业务<span onclick="tishi();">[?]</span>，交易将在 <span id="span1">1000</span> 秒后关闭，请及时付款
+						</div>
+						<div id="wen">
+							<div>付款之后资金直接进入对方账户</div>
+							<span>若发生退款需联系收款方协商，如付款给陌生人，请谨慎操作。</span>
+						</div>
+						<span>小米科技1324521478589652号订单&nbsp;&nbsp;&nbsp;</span>
+						<span id="shoukuan">收款方 : 商户简称 : 小米网</span>
+					</div>
+					<div id="jiage">
+						<div><span>1499.00</span>元</div>
+						<div onclick="xsycxq();">订单详情</div>
+					</div>
+					<div style="display: none;">
+						<div id="xiangqing">
+							<label>收款方：</label><span>商户简称:小米网</span><br />
+							<label>订单号：</label><span>2000110001324521478589652</span><br />
+							<label>商品名称：</label><span id="spmc">小米科技1324521478589652号订单</span><br />
+							<label>交易金额：</label><span>1499.00</span>
+						</div>							
+					</div>
+				</div>
+				<div class="container" id="fkfs">
+					<div>
+						<div class="saoyisao">
+							<div>
+								<div class="neirong">
+									<div>扫一扫付款（元)</div>
+									<div>1499.00</div>
+									<div>
+										<div class="erweima">
+											<img src="img03/canvas.png">
+											<img src="img03/zhi.png" width="44" height="44"/>
+										</div>								
+										<div class="sao">
+											<div><img src="img03/sao.png" /></div>
+											<span>打开手机支付宝扫一扫继续付款</span>
+										</div>
+									</div>
+									<div><a href="#">首次使用请下载手机支付宝</a></div>								
+								</div>							
+								<div>
+									<div onclick="huantu(this)"><img src="img03/zhifu.png" /></div>
+									<div onclick="huantu(this)"><img src="img03/saofu.jpg" /></div>
+								</div>
+							</div>
+							<div>
+									<div><img src="img03/T1HHFgXXVeXXXXXXXX.png" /></div>
+									<div onclick="Denglu();">&lt; 登录账户付款</div>
+							</div>
+						</div>
+							
+							<form id="dlzfb" name="dlzfb" method="get" action="zhifuchenggong.html" onsubmit="return yzdl();"></form>
+						<div class="denglu">
+							<div class="denglu1">
+								<span>试试手机支付宝</span>
+								<div><img src="img03/zhi.png" width="30" height="30"/><span></span></div>
+								<div onclick="Saoyisao();">扫一扫付款 &gt;</div>
+							</div>
+							<div>
+							<div class="denglu2">
+								<div class="bao1">
+									<span>登录支付宝账户付款</span>
+									<span><a href="#">新用户注册</a></span>
+								</div>
+								<div class="bao2">
+									<div><label>账户名：</label><span><a href="#">忘记账户名？</a></span></div>
+									<input type="text" name="txt" id="username" form="dlzfb" placeholder="手机号码/邮箱" onkeypress="cleare(this);"/>
+								</div>
+								<div class="bao2" id="pwd">
+									<div><label>支付密码：</label><span><a href="#">忘记密码？</a></span></div>
+									<input type="password" name="txt" id="password" form="dlzfb"  onkeypress="cleare(this);"/>
+								</div>
+								<div id="err"></div>
+								<div  class="bao3">请输入账户的<span> 支付密码</span>，不是登录密码。 </div>
+								<input type="image" src="img03/xiayibu.png" form="dlzfb"   />
+							</div>
+							</div>
+						</div>
+					</div>
+				</div>					
+		<footer class="container">
+			<div><span>支付宝版权所有 2004-2016 <a href="">ICP证：沪B2-20150087</a></span></div>
+			<img src="img03/2R3cKfrKqS.png">
+		</footer>
+	</div>
+	</body>
+</html>
+

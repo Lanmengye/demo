@@ -1,0 +1,79 @@
+/**********************网页头部信息*******************/
+header
+{
+	width: 100%;
+	background-color: #333;
+}
+
+header>.box
+{
+	height: 40px;
+	line-height: 40px;
+	color:rgba(255,255,255,0.1) ;
+}
+
+
+header>.box a
+{
+	color:rgba(255,255,255,0.6);
+	margin-left:1px ;
+	margin-right: 5px;
+	font-size: 12px;
+}
+header>.box>div>a:hover
+{
+	color: #fff;
+}
+header>.box>.div1>a:first-child 
+{
+	margin-left: 0px;
+}
+/********************************购物车****************************/
+
+.shoppingcart
+{
+	display: inline-block;
+	position: relative;
+	vertical-align: top;
+	margin-top: -1px;
+}
+.div2>.shoppingcart>a
+{
+	margin: 0px;
+	display: inline-block;
+	width: 120px;
+	height: 40px;
+	background-color: #666;
+	text-align: center;
+}
+.div2>.shoppingcart>a>.igou
+{
+	padding-right: 3px;
+}
+.shoppingcart>div
+{   
+	width: 320px;
+	height: 100px;
+	line-height: 100px;
+	font-size: 12px;
+	text-align: center;
+	display: none;
+	background-color: #fff;
+}
+.div2>.shoppingcart:hover>a
+{
+	color: #ff6700;
+	background-color: #fff;	
+	cursor: pointer;
+}
+.shoppingcart:hover>div
+{
+	display: block;
+	box-shadow: 2px 2px 2px 1px #999;
+	position: absolute;
+	z-index: 2;
+	top:40px;
+	right: 0px;
+	color: #333;
+	cursor: pointer;
+}

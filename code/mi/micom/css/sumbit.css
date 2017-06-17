@@ -1,0 +1,155 @@
+body
+{
+	background:#eee;
+	margin: 0;padding: 0;
+}
+
+/*************************正文**********************************/
+.haarder
+{
+	width: 1226px;
+	margin: 0px auto;
+}
+.box2
+{
+	background: white;	
+	margin-top: 20px;
+	padding: 40px 50px;	
+	position: relative;
+}
+.box2>div:first-child
+{
+	width: 60px;
+	display: inline-block;
+	margin-right: 50px;
+}
+.box2>div:first-child>i
+{
+	color: #83c44e;
+	font-size: 75px;
+}
+.box2-1
+{
+	width: 500px;
+	display: inline-block;
+	vertical-align:top;
+	line-height: 30px;
+}
+.box2-1>div:first-child
+{
+	font-size: 28px;
+	color:#333;
+	margin-bottom: 10px;
+}
+.box2-1>p>span
+{
+	cursor: pointer;
+	padding-left: 5px;
+	color:#696969;
+}
+#div1
+{
+	color: #f60;
+}
+#div2
+{
+	width: 250px;
+	padding: 10px 10px 20px 10px;
+	background-color: white;
+	position: absolute;
+	box-shadow: 1px 1px 2px #000;
+	display: none;	
+}
+.box2-2
+{
+	position: absolute;
+	right: 50px;
+	top:40px;
+	text-align: right;
+	line-height: 30px;
+}
+.box2-2>div
+{
+	cursor: pointer;
+}
+.box2-2>div:last-child:hover
+{
+	color:#f60;
+}
+.box2-2>div>span
+{
+	font-size: 18px;
+	color:#f60;
+}
+.haarder>div:nth-child(2)
+{
+	/*height: 200px;*/
+	background: white;
+	margin-bottom: 30px;
+	margin-top: 20px;
+	padding: 20px 35px 20px 150px ;	
+}
+.yc
+{
+	display: none;
+}
+.box2-3-1
+{
+	margin-top: 25px;
+	margin-left: 115px;
+	border-top: 1px solid #ccc;
+	padding-top: 10px;
+}
+.box2-3-1>p>label
+{
+	display: inline-block;
+	width: 80px;
+	line-height: 30px;	
+}
+.box2-3-1>p:first-child>label+span
+{
+	color: #f60;
+}
+
+.box3 div{
+	display: inline-block;
+	width: 170px;height: 55px;
+	border: 1px solid  #DCDCDC;
+	vertical-align: top;
+	text-align: center;
+	line-height: 55px;
+}
+.box3 div a{
+	text-decoration: none;
+	color: #DCDCDC;
+}
+.box3>p{
+	margin-bottom: 20px;
+}
+.box3>p:first-child{
+    color: grey;
+	border-bottom: 1px solid gainsboro;
+	font-size: 20px;
+	padding-bottom: 20px;	
+}  
+.box3>p~p
+{
+	font-size: 16px;
+}
+.box3 img
+{
+	width: 170px;height: 55px;
+	margin-right: 10px;
+	border: 1px solid #DCDCDC; 	
+}
+.box3>a>img:hover
+{
+	border: 1px solid orange;
+	cursor: pointer;
+}
+.box3>p>span
+{
+	color: #808080;
+	font-size:12px;
+}
+			

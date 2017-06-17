@@ -1,0 +1,487 @@
+
+
+.text
+{
+	width: 100%;
+	background-color: #eee;
+	padding-top:40px;
+	padding-bottom: 60px;
+}
+.text>section
+{
+	background-color: #fff;
+}
+.orangered
+{
+	color: #FF6700;
+}
+form
+{
+	margin: 0px;
+}
+/*****************************各内容标题设置************************/
+section>div>p
+{
+	font-size: 18px;
+	display: inline-block;
+	width:120px;
+	height: 90px;
+	line-height: 90px;
+	margin-left: 50px;
+	margin-right: 20px;
+}
+.receipt>p
+{
+	height: 40px;
+	line-height: 40px;
+}
+/*****************************收货地址设置**************************/
+.shou
+{
+	display: flex;
+	margin-bottom: 20px;
+}
+.shou>div
+{
+	margin-left: 50px;	
+	width: 268px;
+	height: 178px;
+	border: 1px solid #ddd;
+}
+.shou .iconabc
+{
+	font-size: 28px;
+	color: #ddd;
+}
+.shou>div:last-child
+{
+	text-align: center;
+}
+.shou>div:last-child>div
+{
+	margin-top: 60px;
+	margin-bottom: 5px;
+}
+
+
+/*************具体地址显示**********/
+.changyong
+{
+	padding-left: 20px;
+	position: relative;
+	cursor: pointer;
+	display: none;
+}
+.shou>div:hover
+{
+	border-color: #333;
+	cursor: pointer;
+}
+.shou>div:hover i
+{
+	color: #696969;
+}
+.changyong>div:first-child
+{
+	margin: 20px 0px;
+	font-size:18px;
+	font-family: "微软雅黑";
+	color: #000;
+}
+.changyong>div:not(:first-child)
+{
+	color:#666;
+}
+.changyong>span
+{
+	position: absolute;
+	bottom: 20px;
+	right:20px;
+}
+.changyong>span:hover
+{
+	color: #FF6700;
+}
+/*********************支付方式、配送方式、配送时间总体设置*************/
+.center
+{
+	height: 90px;
+	line-height: 90px;
+	border-bottom: 1px solid #ccc;
+}
+/****************配送时间、发票种类设置*******************/
+input[type="radio"]
+{
+	display: none;
+}
+input+label
+{
+	display: inline-block;
+	width: 233px;
+	height:38px;
+	line-height:38px;
+	text-align: center;
+	margin-right: 20px;
+	border: 1px solid #ccc;
+	cursor: pointer;
+}
+#time01+label
+{
+	margin-left: -4px;
+}
+input:checked+label
+{
+	color: #ff6700;
+	border: 1px solid #ff6700;
+}
+/******************************发票******************************/	
+.receipt
+{
+	border: none;
+	display: flex;
+}	
+.receipt>p
+{
+	height: 90px;
+	line-height: 90px;
+}
+/**********选项设置***********/
+.receipt>div>div:first-child
+{
+	margin-top: 25px;
+	margin-bottom: 10px;
+}
+
+/********选项内容的显示与隐藏*******/
+.dianzi
+{
+	text-indent: 10px;
+	font-size: 12px;
+	margin-top: 5px;
+}
+.zizhi,#danwei
+{
+	display: none;
+}
+#geren>div:first-child
+{
+	margin-top: 20px;
+	margin-bottom: 5px;
+}
+/**********输入单位抬头的文本框设置*************/
+#danwei>input
+{
+	display: block;
+	width: 500px;
+	height: 40px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+/****************************商品及优惠设置********************/
+.goods>div:first-child
+{
+	padding-top: 80px;
+	border-bottom: 1px solid #ccc;
+}
+.goods>div:first-child>p
+{
+	margin-left: 50px;
+	margin-bottom: 10px;
+	font-size: 18px;
+}
+.goods>div:first-child>p+span
+{
+	margin-right: 50px;	
+	cursor:pointer;
+	
+}
+.goods>div:first-child>p+span>a
+{
+	color: #696969;
+}
+.goods>div:first-child>p+span>a:hover
+{
+	color: #FF6700;
+}
+.goods>div:nth-child(2)
+{
+	height: 60px;
+	line-height: 60px;
+	border-bottom: 1px solid #ccc;
+}
+.goods>div:nth-child(2)>div:first-child
+{
+	margin-left: 40px;
+}
+.goods>div:nth-child(2)>div:first-child>a>img
+{
+	vertical-align: middle;
+	margin-right: 10px;
+}
+.goods>div:nth-child(2)>span
+{
+	display: block;
+	width: 70px;
+	margin-right: 70px;
+}
+.goods>div:nth-child(3)
+{
+	padding: 20px 0px;
+	height: 180px;
+	border-bottom: 1px solid #ccc;	
+}
+.quan
+{
+	display: block;
+	margin-left: 50px;
+	position: relative;
+}
+.quan .jiahao
+{
+	color: #FF6700;
+}
+.quan>div
+{
+	margin-bottom: 10px;
+	cursor: pointer;
+}
+.quan>div>.iconfont
+{
+	margin-right: 10px;
+}
+.heji
+{
+	margin-right: 50px;
+}
+.heji>table
+{
+	text-align: right;
+}
+.heji td:first-child
+{
+	color: #696969;
+}
+.heji tr:last-child
+{
+	height: 50px;
+	vertical-align: bottom;
+}
+.heji tr:last-child span
+{
+	font-size: 28px;
+}
+td
+{
+	width:120px;
+	height: 20px;
+	color: #FF6700;
+}
+
+
+
+/***********************************结算***************************/
+section>div:last-child>div:first-child
+{
+	
+}
+section>div:last-child>a>div
+{
+	width: 160px;
+	height: 40px;
+	line-height: 40px;
+	margin: 20px 0px;
+	margin-right:50px;
+	color: #fff;
+	background-color: #ff6700;
+	text-align: center;
+}
+
+
+
+
+
+
+/*------------------------------ 地址弹框-------------------------------------*/
+
+.zong
+{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0 , 0.6);
+	/**/
+	position:fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	/**/
+	display: none;
+}
+
+
+.address
+{
+	width:340px;
+	height: 500px;
+	padding-top: 20px;
+	background-color: #fff;
+	border-radius:5px ;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 999;
+	margin-left: -250px;
+	margin-top: -250px;
+}
+.address input
+{
+	display: block;
+	width: 295px;
+	height: 40px;
+	margin: 0px auto;
+	margin-bottom: 15px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	text-indent: 5px;
+}
+#xian
+{
+	background: url(../../img02/xiangxia.png) no-repeat scroll right center transparent;
+}
+select:hover
+{
+	cursor: pointer;
+}
+.selt1
+{                     
+	width: 142px;
+	height: 40px;
+	margin-left:21px ;
+}
+.selt1+select
+{
+	width: 142px;
+	height: 40px;
+	margin-left: 10px;
+}
+.selt1+select+select
+{
+	width: 299px;
+	height: 40px;
+	margin-left: 21px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+.Tijiao
+{
+	width: 299px;
+	display:flex;
+	margin-top: 40px;
+	margin: 0px auto;
+}
+.Tijiao>input
+{
+	width: 142px;
+	height: 32px;
+	border: none;
+	margin-top: 20px;
+}
+.Tijiao>input:last-child
+{
+	margin-left: 15px;
+}
+
+
+
+select 
+{
+  border: solid 1px #ccc;
+  border-radius: 5px;
+  appearance:none;
+  -moz-appearance:none;
+  -webkit-appearance:none;
+
+  background: url(../../img02/xiangxia.png) no-repeat scroll right center transparent;
+
+  padding-right: 14px;
+}
+
+select::-ms-expand { display: none; }
+
+
+/******************************优惠券弹框************************/
+#err
+{
+	color: #FF6700;
+}
+
+.youhui
+{
+	width: 668px;
+	height: 320px;
+	background-color: #fff;
+	box-shadow: 2px 2px 5px #ddd;
+	position: absolute;
+	top: 1020px;
+	left: 100px;
+	z-index: 999;
+	display: none;
+}
+.youhui .span1
+{
+	color: #FF6700;
+}
+.youhui>div:first-child
+{
+	width: 392px;
+	height: 80px;
+	line-height: 80px;
+	margin: 0px auto;
+}
+.youhui>div:first-child>span
+{
+	margin: 0px 55px;
+	cursor: pointer;
+}
+.youhui1
+{
+	width: 578px;
+	margin: 30px auto;
+}
+.youhui1>span
+{
+	width: 578px;
+	display: block;
+	text-align: center;
+	
+}
+.youhui1>div
+{
+	width: 380px;
+	margin: 0PX auto;
+	display: none;
+}
+.youhui1>div>input
+{
+	width: 380px;
+	height: 40px;
+	margin: 0px auto;
+	text-indent: 5PX;
+	border: 1px solid #ddd;
+}
+
+.youhui1>div>div
+{
+	width: 400px;
+	display: inline-block;
+	margin: 15px auto;
+	text-align: center;
+
+}
+.youhui1>div>div>input
+{
+	width:162px;
+	height: 44px;
+	margin: 0 auto;
+	margin-right:25px;
+}
+

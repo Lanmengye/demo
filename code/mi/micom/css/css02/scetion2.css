@@ -1,0 +1,383 @@
+/*************************************网页正文第二部分***********************************/
+/**************************网页正文第二部分背景设置****************************/
+.section2
+{
+	background-color: #eee;
+	width: 100%;
+	padding-bottom: 20px;
+}
+/************************评论文字及显示方式设置********************************/
+.section2 .comment
+{
+	font-size: 13px;
+	color: #999;
+	display: block;
+}
+/************************第二部分各小节头部设置*******************************/
+/****************头部左侧******************/
+.section2>*>div:first-child
+{
+	height: 58px;
+}
+/****************头部右侧******************/
+.section2>*>div:first-child>div:nth-child(2)
+{
+	font-size: 16px;
+	color: #424242;
+	line-height: 58px;
+}
+/************************第二部分各商品容器设置******************************/
+.container
+{
+	background-color: #fff;
+	width: 215px;
+	padding: 20px 10px;
+	height:260px;
+	margin-top: 4px;
+}
+.container02
+{
+	background-color: #fff;
+	margin: 0px 5px;
+	margin-top: 4px;
+	width: 296px;
+	position: relative;
+}
+.hot
+{
+	height: 430px;
+}
+.content
+{
+	height: 315px;
+}
+.video
+{
+	height: 265px;
+}
+
+.container02 .iconfont
+{
+	position: absolute;
+	top: 140px;
+	left: 20px;
+	font-size: 28px;
+}
+.container02 .iconfont:hover
+{
+	color: #FF6700;
+	cursor: pointer;
+}
+
+
+/**********************鼠标停留在第二部分各商品容器设置*********************/
+.container:hover,.container02:hover
+{
+	margin-top: 0px;
+	box-shadow: 5px 2px 5px  #bbb;
+	-moz-transition: margin-top ease-out .3s;	
+}
+/******************容器里内容设置*****************/
+.container>*
+{	
+	display: block;
+	margin: 0px auto 10px;
+	text-align: center;
+	font-size:14px;
+}
+.container>a:first-child
+{
+	margin-bottom: 20px;
+}
+.container img
+{
+	width: 145px;
+}
+/***************网页正文第二部分第一小节***************/
+.section21>div:first-child>div:nth-child(2)>i
+{
+	vertical-align: middle;
+	font-size: 18px;
+	padding-left: 5px;
+	color: #999;
+}
+.section21>div:first-child>div:nth-child(2):hover
+{
+	color:#ff6700;
+	cursor: pointer;
+}
+.section21>div:first-child>div:nth-child(2):hover>i
+{
+	color:#ff6700;
+}
+/**************智能硬件****************/
+.section21>div:nth-child(2)
+{
+	position: relative;
+	width: 1226px;
+	height: 614px;
+	margin-bottom: 40px;
+}
+/**********智能小车***********/
+.section21>div:nth-child(2)>.car
+{
+	position: absolute;
+	margin-top: 4px;
+}
+.section21>div:nth-child(2)>.car:hover
+{
+	margin-top: 0px;
+	box-shadow: 5px 2px 5px  #bbb;
+	-moz-transition: margin-top ease-out .3s;
+}
+/*********右边智能硬件********/
+.section21>div:nth-child(2)>.car+div
+{
+	position: absolute;
+	left: 245px;
+}
+
+/***************网页正文第二部分第二小节~第四小节（搭配、配件、周边）***************/
+/*******头部右侧设置*******/
+.section2>*>div:first-child>div:nth-child(2)>span
+{
+	display: inline-block;
+	padding-left: 20px;
+}
+.section2>*>div:first-child>div:nth-child(2)>.xuanze
+{
+	cursor: pointer;
+	text-decoration: underline;
+	color:#ff6700;
+}
+/******内容设置********/
+.section22>div:last-child>div:not(:first-child),
+.section23>div:last-child>div:not(:first-child),
+.section24>div:last-child>div:not(:first-child)
+{
+	display: none;
+}
+.section2>*>div:last-child>a
+{
+	margin-top: 4px;
+}
+.section2>*>div:last-child>a:hover
+{
+	margin-top: 0px;
+}
+/******原价、第三小节超链接设置******/
+.discount
+{
+	text-decoration: line-through;
+	color: #c3c3c3;
+}
+.section23 a
+{
+	font-size: 13px;
+}
+/*****************浏览更多*****************/
+.last
+{
+	width: 235px;
+	height: 300px;
+	padding: 0px;
+}
+.last>div
+{
+	width: 195px;
+	height: 143px;
+	padding: 0px 20px ;
+	background-color: #fff;
+	font-size: 14px;
+	margin-top: 4px;
+}
+.last>div:hover
+{
+	margin-top: 0px;
+}
+.last>div *
+{
+	margin-bottom: 10px;
+	display: block;
+}
+.scanmore
+{
+	font-size: 18px;
+}
+.last>div>div:first-child
+{
+	padding-top: 40px;
+}
+.last>div>a:first-of-type
+{
+	margin-top: 10px;
+}
+.last>div img
+{
+	width: 100px;
+}
+.last>div:nth-child(2)>a>div
+{
+	width: 100px;
+	height: 143px;
+	line-height: 120px;
+
+	text-align: center;
+}
+.last>div:nth-child(2)>a>div>i
+{
+	font-size: 48px;
+	color:#ff6700;
+}
+/***************网页正文第二部分第五小节 为你推荐***************/
+.container>a:last-child
+{
+	color: #999;
+}
+
+/***************网页正文第二部分第六小节 热评商品***************/
+.hot>div
+{
+	padding: 30px 20px;
+	background-color: #fff;
+}
+.hot>div>a
+{
+	height: 55px;
+	font-size: 14px;
+}
+.hot>div>span
+{
+	display: inline-block;
+	margin-bottom: 10px;
+	color: #999;
+	font-size: 14px;
+}
+.hot>div>a:first-child
+{
+	display: block;
+	line-height: 150%;
+	margin-bottom: 30px;
+}
+.hot>div>span:nth-last-child(2)
+{
+	padding-left: 5px;
+	color: #999;
+}
+.hot>div>span:last-child
+{
+	padding-left: 5px;
+}
+
+
+/***************网页正文第二部分第七小节***************/
+.content
+{
+	position: relative;
+	padding-bottom: 40px;
+}
+.content>.bar>span:hover
+{
+	background-color: #FF6700;
+}
+.bar+div>div
+{
+	display: block;
+	margin: 0px auto;
+	padding: 0px 50px;
+	text-align: center;
+}
+.bar+div>div:not(:first-child)
+{
+	display: none;
+}
+.bar+div>div>div:first-child
+{
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+.bar+div>div>div:nth-child(2)
+{
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+.bar+div>div>a:nth-child(3)
+{
+	display: block;
+	height:40px;
+	line-height: 150%;
+	color: #999;
+	margin-bottom: 20px;
+}
+..bar+div>div>img:last-child
+{
+	margin: 20px auto;
+}
+
+/*****************各主题标题颜色****************/
+.section27 .div01>div:first-child>div:first-child
+{
+	color: orange;
+}
+.section27 .div02>div:first-child>div:first-child
+{
+	color: #83c441;
+}
+.section27 .div03>div:first-child>div:first-child
+{
+	color: #2196f3;
+}
+.section27 .div04>div:first-child>div:first-child
+{
+	color: #e53935;
+}
+/****************选择条设置**********************/
+.section27 .bar
+{
+	position: absolute;
+	bottom: 20px;
+	text-align: center;
+	width: 100%;
+	height: 15px;
+	line-height: 15px;
+}
+.section27 .bar>span
+{
+	vertical-align: middle;
+	display: inline-block;
+	margin:0px 12px;
+	width: 6px;
+	height: 6px;
+	background-color:#ccc;
+	border-radius: 5px;
+	cursor:pointer;
+}
+.section27  .bar>.spanc
+{
+	cursor: auto;
+	background-color: #fff;
+	border: 2px solid #ff6700;
+}
+/***************网页正文第二部分第八小节***************/
+
+.video>img
+{
+	display:block;
+	width: 296px;
+}
+.video>a
+{
+	display: block;
+	text-align: center;
+}
+.video>a:nth-child(2)
+{
+	font-size: 14px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.video>a:last-child
+{
+	padding-bottom:30px ;
+	color: #999;
+}

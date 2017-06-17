@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>小米帐号 - 注册</title>
+		<link rel="stylesheet" href="css/register1.css" />
+		<link rel="stylesheet" href="css/regini.css" />
+		<link rel="stylesheet" href="css/icon/icon.css" />
+		<script type="text/javascript" src="js/register.js" ></script>
+	</head>
+	<body onload="displayyzm()">
+		<form name="reg01" onsubmit="return chkreg();" action="register2.html" method="get" >
+		<div class="zhengwen">
+			
+			<div class="zhuce">
+				<img src="img/milogo.png" onclick="window.location.href='index.html'"/>
+				<p>注册小米账号</p>
+				<div><span id="zzdq">中国(+86)</span><i class="iconfont" onclick="displayarea();">&#xe65d;</i></div>
+				<div class="quyu" id="area" style="	display: none;">
+					<div>常用</div>
+					<ul>
+						<li onclick="xzarea(this)"><span>中国</span><span>+86</span></li>
+						<li onclick="xzarea(this)"><span>台湾</span><span>+886</span></li>
+						<li onclick="xzarea(this)"><span>中国香港</span><span>+852</span></li>
+						<li onclick="xzarea(this)"><span>India</span><span>+91</span></li>
+						<li onclick="xzarea(this)"><span>Indonesia</span><span>+62</span></li>
+						<li onclick="xzarea(this)"><span>Brazil</span><span>+55</span></li>
+						<li onclick="xzarea(this)"><span>Malaysia</span><span>+60</span></li>
+						<li onclick="xzarea(this)"><span>American Samoa</span><span>+1</span></li>
+						<li onclick="xzarea(this)"><span>Australia</span><span>+61</span></li>
+						<li onclick="xzarea(this)"><span>Canada</span><span>+52</span></li>
+						<li onclick="xzarea(this)"><span>France</span><span>+33</span></li>
+						<li onclick="xzarea(this)"><span>Italy</span><span>+39</span></li>
+						<li onclick="xzarea(this)"><span>Mexico</span><span>+53</span></li>
+						<li onclick="xzarea(this)"><span>New Zealand</span><span>+64</span></li>
+						<li onclick="xzarea(this)"><span>Russia</span><span>+7</span></li>
+					</ul>
+				</div>
+				<div class="sjh">
+					<input type="tel" name="phone" placeholder="请输入手机号码" onkeypress="clearl(this)" />
+				</div>
+				<div class="err" id="sjherr"><img src="img/index.png"/><div></div></div>
+				<div class="yzm">
+					<input type="text" name="yzm" placeholder="图片验证码" onkeypress="clearl(this)"/>
+					<canvas id="canvas1" width="120" height="40" onclick="displayyzm();" ></canvas>
+				</div>
+				<div class="err" id="yzmerr"><img src="img/index.png"/><div></div></div>
+				<div class="zhucesub">
+					<input type="submit" name="sub" id="sub2" ><label for="sub2" >立即注册</label>
+	                <p>点击"立即注册",即表示您同意并愿意遵守小米 <a href="#">用户协议</a> 和 <a href="#">隐私政策</a>
+	                </p>
+	            </div>
+			</div>
+		</div>
+		</form>
+		<div class="footer">
+			<ul>
+			    <li><a href="###">简体</a><span>|</span></li>
+			    <li><a href="###">繁体</a><span>|</span></li>
+			    <li><a href="###">English</a><span>|</span></li>
+			    <li><a href="###">常见问题</a></li>
+			</ul>
+			<p><span>小米公司版权所有-京ICP备10046444-<a href="###"><span><img src="img/ghs.png"></span>京公网安备11010802020134号</a>-京ICP证110507号</span></p>
+		</div>
+		
+	</body>
+</html>

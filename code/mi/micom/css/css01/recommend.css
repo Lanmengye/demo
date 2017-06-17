@@ -1,0 +1,468 @@
+/*****************整体*******************************/
+body
+{
+	
+	background-color: #F1f1f1;
+}
+/*****************顶部*******************************/
+header
+{
+	width: 100%;
+	height: 100px;
+	line-height: 100px;
+	background-color: white;
+	border-bottom: orangered solid 2px;
+}
+.ding
+{
+	width: 1226px;
+	height: 100px;
+	margin: 0px auto;
+	display:flex;
+	justify-content: space-between;
+	background-color:white;
+}
+.ding>div img
+{
+	vertical-align:middle;
+}
+.ding>ul
+{
+	display: flex;
+}
+.ding>ul>li>div
+{
+	font-size: 12px;
+}
+.ding>ul>li>div>a
+{
+	color: #999;
+}
+.ding>ul>li>a,.div2>ul>li>div>a
+{
+	color: #999;
+	font-size: 12px;
+}
+.ding>ul>li:first-child
+{
+	width:120px;
+	text-align:center ;
+	position: relative;
+}
+.ding li:first-child>ul
+{
+	height: 0px;
+	overflow: hidden;
+}
+.ding li:first-child>div:hover>a
+{
+	color: #ff6700;
+}
+.ding li:first-child:after a
+{
+	color: white;
+}
+.ding>ul>li:hover
+{
+	background-color: white;
+	
+}
+.ding li:first-child:hover>ul
+{
+	position: absolute;
+	top:70px;
+	z-index: 2;
+	box-shadow: 3px 3px 5px 1px rgba(0,0,0,0.2);
+	padding-top: 10PX;
+	padding-bottom: 10px;
+	height: 150px;
+	border-radius: 2px;
+	-moz-transition: height .3s ease-in;
+}
+.ding li:first-child>ul
+{
+	
+	background-color: #fff;
+}
+.ding li:first-child>ul>li
+{
+	width: 120px;
+	height: 25px;
+	line-height: 30px;
+	padding-bottom: 5px;
+}
+.ding li:first-child>ul>li:hover
+{
+	background-color:#DCDCDC;
+}
+.ding li:first-child>ul>li:hover>a
+{
+	color: #ff6700;
+}
+.ding li:first-child i
+{
+	padding-left: 5px;
+}
+.ding>ul>li:last-child>a
+{
+	padding-left: 10px;
+	border-left: 1px solid #ccc;
+}
+/*********************正文格式***************************/
+.cs2
+{
+	width: 1226px;
+	background-color: #F1f1f1;
+	margin:42px auto;
+}
+/*********************左侧***************************/
+.cs2>.left
+{
+	width:916px;
+	background-color:white;
+}
+/*********************左侧第一个框***************************/
+.span
+{
+	width: 133px;
+	height: 30px;
+	line-height: 30px;
+	margin-left: 46px;
+	margin-top: 32px;
+	background-color:#83C44E;
+}
+.span span
+{
+	padding-left: 8px;
+	font-size: 14px;
+	color: white;
+}
+.cs2 .csa
+{
+	width: 820px;
+	height: 320px;
+	display: flex;
+	flex-direction:row ;
+	border:#83C44E solid 2px;
+	margin: 0px auto;
+	margin-top: -10px;
+}
+.csa
+{
+	width: 600px;
+	height: 300px;
+}
+.csa>.csa1
+{
+	margin: 20px 30px;
+}
+.csa>.csa2
+{
+	width: 450px;
+	height: 200px;
+	margin: 60px 10px;
+}
+.csa>.csa2>div:first-child
+{
+	font-size: 25px;
+	color:#333333;
+	margin: 10px 0px;
+}
+.csa>.csa2>div:first-child span
+{
+	color:crimson;
+	font-size: 23px;
+}
+.csa>.csa2 p
+{
+	font-size: 14px;
+	color: #696969;
+}
+.csa>.csa2 .csa3
+{
+	margin-top: 15px;
+	margin-bottom: 5px;
+}
+.csa>.csa2 .csa3 a
+{
+	font-size: 14px;
+	color: #696969;
+	text-decoration: none;
+}
+.csa>.csa2 .csa3 a:hover
+{
+	color: orange;
+}
+.csa>.csa2 input
+{
+	margin-left: 0px;
+	margin-bottom: 10px;
+	color: red;
+}
+.csa>.csa2 label
+{
+	font-size: 14px;
+	color: #696969;
+	cursor: pointer;
+}
+/*********************左侧第二个框***************************/
+.span1
+{
+	margin-left: 47px;
+}
+.cs2 .csaa
+{
+	border:#83C44E solid 1px;
+}
+.csb
+{
+	width: 450px;
+	height: 200px;
+	margin: 60px 0px;
+}
+.csa>.csb>div
+{
+	font-size: 25px;
+	color: #333333;
+	margin: 10px 0px;
+}
+.csa>.csb>div:first-child>b>span:first-child
+{
+	color:crimson;
+}
+.csa>.csb>p
+{
+	font-size: 14px;
+	color:#696969;
+	margin-left: 10px;
+}
+.csa>.csb>ul
+{
+	display: flex;
+	flex-direction: row;
+}
+.csa>.csb>ul>li
+{
+	margin-left: 10px;
+	margin-right: 30px;
+}
+.csb1>ul>li img
+{
+	width: 20px;
+	height: 20px;
+	border: 1px solid #D3D3D3;
+}
+.csb1>ul>li img:hover
+{
+	border-color: #696969;
+}
+.csb2>ul>li
+{
+	width: 20px;
+	height: 20px;
+	border: 1px dashed #D3D3D3;
+}
+.csb2>ul>li:hover
+{
+	border-color: #696969;
+}
+.csa>.csb>ul>li>p
+{
+	margin: 20px auto;
+	color:#696969;
+}
+/**************左侧第三个框**********************************/
+.csc
+{
+	width: 820px;
+	height: 180px;
+	display: flex;
+	flex-direction: row;
+	border-bottom: #D3D3D3 solid 1px;
+	margin: 0px auto;
+}
+.csc2
+{
+	width: 600px;
+	height: 120px;
+	margin:30px 20px;
+}
+.csc>.csc1
+{
+	margin-top:20px ;
+}
+.csc>.csc2>p:first-child
+{
+	font-size: 18px;
+	margin-bottom: 15px;
+}
+.csc>.csc2>p:first-child+p
+{
+	font-size: 13px;
+	color: #696969;
+	margin-bottom: 10px;
+}
+.csc>.csc2 input
+{
+	margin-left: 0px;
+	margin-bottom: 5px;
+}
+.csc>.csc2 span
+{
+	color: orange;
+}
+.csc>.csc2 label
+{
+	font-size: 14px;
+	color: #333333;
+	margin-left: 15px;
+	cursor: pointer;
+}
+/**************左侧第4,5,6个框**********************************/
+.csc2>ul
+{
+	display: flex;
+	flex-direction: row;
+}
+.csc2>ul>li
+{
+	padding-right: 30px;
+}
+.csc2>ul>li>p
+{
+	margin-bottom: 10px;
+}
+.csc3>ul
+{
+	display: flex;
+	flex-direction: row;
+}
+.csc3>ul>li
+{
+	margin-right: 15px;
+}
+.csc3>ul>li img
+{
+	width: 20px;
+	height: 20px;
+	border: 1px solid #D3D3D3;
+}
+.csc3>ul>li:hover img
+{
+	border-color: #696969;
+}
+.csc4>ul>li
+{
+	border: 1px dashed #D3D3D3;
+	width: 20px;
+	height: 20px;	
+}
+.csc4>ul>li:hover
+{
+	border-color: #696969;
+}
+.csabc
+{
+	border-bottom: none;
+}
+/**************右侧**********************************/
+
+.cs2>.right
+{
+	width: 296px;
+	background-color: white;
+}
+.cs2>.right>div:first-child
+{
+	width: 260px;
+	height: 50px;
+	line-height: 50px;
+	margin: 0px auto;
+	font-size: 17px;
+	color:#696969;
+	border-bottom:#DCDCDC solid 1px;	
+}
+.cs3
+{
+	width: 260px;
+	margin: 0px auto;
+	border-bottom:#DCDCDC solid 1px ;
+}
+.cs3 :first-child
+{
+	text-align: center;
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+.cs3 :first-child+div
+{
+	text-align: center;
+	margin-top: 5px;
+	color: #696969;
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+.cs3>p
+{
+	text-align: center;
+	font-size: 12px;
+	color: #A9A9A9;
+	margin-bottom: 15px;
+}
+.cs3+div
+{
+	display: none;
+	padding: 20px;
+	padding-bottom: 0px;
+}
+.cs3+div>*
+{
+	display: inline-block;
+}
+.cs3+div>div
+{
+	width: 230px;
+}
+.cs3+div>span
+{
+	width: 16px;
+	height: 16px;
+	border-radius: 8px;
+	text-align: center;
+	cursor:pointer;
+}
+.cs3+div>span:hover
+{
+	
+	background-color: #FF6700;
+}
+.cs4
+{
+	font-size: 18px;
+	text-align: center;
+	margin: 20px auto;
+	color: dimgray;
+}
+.cs4 span
+{
+	font-size:18px ;
+	color: orange;
+}
+
+.cs5>div
+{
+	width: 296px;
+	height: 50px;
+	line-height: 50px;
+	color: white;
+	text-align: center;
+	font-size: 18px;
+	background-color: #FF6700;
+}
+.cs5>div:hover
+{
+	background-color: #F25807;
+}
+
+
+

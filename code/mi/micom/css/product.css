@@ -1,0 +1,710 @@
+.list
+{
+	background-color: #F5F5F5;
+	width: 100%;
+	height: 50px;
+}
+.list>div
+{
+	width: 1226px;
+	height: 50px;
+	line-height: 50px;
+	margin: 0px auto;
+	display: flex;
+	justify-content: space-between;
+}
+.pmai
+{
+	position: fixed;
+	z-index: 9999;
+	top:0px;
+	background-color: rgba(255,255,255,0.95);
+}
+.list>div>span
+{
+	font-size: 18px;
+}
+.xuanxiang>a
+{
+	font-size: 14px;
+}
+.xuanxiang>a:first-child
+{
+	color: #ff6700;
+}
+.xuanxiang span
+{
+	margin: auto 5px;
+	color: #ddd;
+}
+.xuanxiang :last-child
+{
+	display: inline-block;
+	width: 120px;
+	height: 30px;
+	line-height: 30px;
+	color: white;
+	text-align: center;
+	background-color: #FF6700;
+	margin-left: 10px;
+}
+
+.xuanxiang a:hover
+{
+	color: #FF6700;
+}
+.xuanxiang a:last-child:hover
+{
+	background-color:#F25807;
+	color:white;
+}
+
+/*********************************************************************************/
+
+.picture1
+{
+	width: 100%;
+}
+.picture1>div
+{
+	width: 1226px;
+	height: 720px;
+	margin: 0px auto;
+	line-height: 40px;
+	text-align: center;
+	background: url(../img/product/intro_header_s.jpg) no-repeat;
+	background-position: 0px bottom;
+}
+
+.picture1>div>p
+{
+	margin-top: 85px;
+	font-size: 40px;
+	margin-bottom: 20px;
+}
+.picture1>div>p>span
+{
+	color: #e53935;
+}
+.picture1>div>span
+{
+	font-size: 16px;
+	color: #424242;
+}
+.picture1>div>div
+{
+	color: #212121;
+	font-size: 16px;
+}
+.picture1>div>div>span
+{
+	color: #FF6700;
+}
+
+.picture2
+{
+	width: 100%;
+	margin: 0px auto;
+	background: url(../img/product/intro_movie.jpg) no-repeat;
+	background-position:center  0px ;
+}
+
+.picture2>div
+{
+	width: 1226px;
+	height: 750px;
+	margin: 0px auto;
+	color: white;
+	line-height: 40px;
+	text-align: center;
+}
+.picture2>div :nth-child(2)
+{
+	width: 435px;
+	height: 215px;
+}
+.picture2>div :nth-child(4)
+{
+	width: 550px;
+	height: 280px;
+}
+.picture2>div>p
+{
+	font-size:30px;
+	padding-top: 40px;
+}
+.csa
+{
+	font-size: 18px;
+	padding-top:20px ;
+}
+.picture2>div>div
+{
+	font-size: 14px;
+	margin-top: -25px;
+	margin-bottom: 15px;
+}
+.picture2>div>div span
+{
+	color: #FF6700;
+	margin-left: 5px;
+	cursor: pointer;
+}
+.picture2>div>span
+{
+	display: block;
+	font-size: 14px;
+}
+
+
+
+.picture3
+{
+	width: 100%;
+	margin: 0px auto;
+	background: url(../img/product/intro_game_s.jpg) no-repeat;
+	background-position:center bottom;
+}
+.picture3>div
+{
+	width: 1226px;
+	height: 820px;
+	margin: 0px auto;
+	line-height: 40px;
+	text-align: center;
+}
+.picture3>div>p
+{
+	font-size: 30px;
+	padding-top: 60px;
+	margin-bottom: 40px;
+}
+.picture3>div>div
+{
+	display: flex;
+	justify-content:center;
+}
+.picture3>div>div>div
+{
+	display: block;
+}
+.picture3>div>div>div:first-child
+{
+	margin-left: 85px;
+}
+.picture3>div>div>div:first-child>p
+{
+	font-size: 14px;
+	margin-top: -30px;
+}
+.picture3>div>div>div:last-child
+{
+	margin-left: 85px;
+}
+.picture3>div>div>div:last-child>p
+{
+	margin-top: -25px;
+	margin-left: -100px;
+}
+.picture3>div>div>div:last-child :last-child
+{
+	margin-top: -20px;
+	color: #FF6700;
+	cursor: pointer;
+}
+.picture_1
+{
+	background: url(../img/product/intro_pic_s.jpg) no-repeat;
+	background-position:center bottom;
+	background-color: #FAFAFA;
+	height: 870px;
+}
+.picture_2
+{
+	background: url(../img/product/intro_table_s.jpg) no-repeat;
+	background-position:center bottom;
+	height: 860px;
+}
+
+
+
+.picture4
+{
+	width: 100%;
+	margin: 0px auto;
+	background: url(../img/product/intro_map_s.jpg) no-repeat;
+	background-position:center bottom;
+}
+.picture4>div
+{
+	width: 1226px;
+	height: 800px;
+	margin: 0px auto;
+	line-height: 40px;
+	text-align: center;
+}
+.picture4>div>p
+{
+	font-size: 30px;
+	padding-top: 60px;
+	margin-bottom: 40px;
+}
+.picture4>div>div
+{
+	display:flex;
+}
+.picture4>div>div :nth-child(2)
+{
+	margin-left:60px;
+}
+.picture4>div>div :nth-child(3)
+{
+	margin-left: 80px;
+}
+.picture4>div>div>p,.picture4>div>div>div
+{
+	margin: 200px 0px;
+}
+.picture4>div>div>p
+{
+	margin-left: 190px;
+	margin-right: -50px;
+}
+.picture4>div>div>div
+{
+	margin-left: -70px;
+}
+.picture4>div>div>div
+{
+	text-align: left;
+}
+.picture4>div>div>div>p:last-child
+{
+	margin-left: 0px;
+	margin-top: -10px;
+	color: #FF6700;
+	cursor: pointer;
+}
+
+
+.picture5
+{
+	width: 100%;
+	margin: 0px auto;
+}
+.picture5>div
+{
+	width: 1226px;
+	height: 800px;
+	margin: 0px auto;
+	background: url(../img/product/intro_screen_CS.png) no-repeat;
+	background-position: right 60px;
+	position: relative;
+}
+.picture5>div>div
+{
+	position: absolute;
+	top: 200px;
+	left: 160px;
+}
+
+.picture5>div>div :first-child
+{
+	font-size: 30px;
+	color: #696969;
+}
+.picture5>div>div :nth-child(2)
+{
+	font-size: 18px;
+	color: #696969;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+.picture5>div>div>div
+{
+	font-size: 16px;
+	color: #FF6700;
+	cursor: pointer;
+}
+
+
+
+
+.picture6
+{
+	width: 100%;
+	margin: 0px auto;
+	background-color: #FAFAFA;
+}
+.picture6>div
+{
+	width: 1226px;
+	height: 800px;
+	margin: 0px auto;
+	background: url(../img/product/intro_power.jpg) no-repeat;
+	background-position: left 60px;
+	position: relative;
+}
+.picture6>div>div
+{
+	position: absolute;
+	top: 285px;
+	right: 0px;
+}
+
+.picture6>div>div :first-child
+{
+	font-size: 30px;
+	color: #696969;
+}
+.picture6>div>div :nth-child(2)
+{
+	font-size: 18px;
+	color: #696969;
+}
+.picture6>div>div>div
+{
+	font-size: 16px;
+	color: #FF6700;
+	cursor: pointer;
+}
+
+
+.picture7
+{
+	width: 100%;
+	height: 800px;
+	margin: 0px auto;
+	background: url(../img/product/intro_memory_s.jpg) no-repeat;
+	background-position: center bottom; 
+}
+.picture7>div
+{
+	width: 1226px;
+	margin: 0px auto;
+	text-align: center;
+	padding-top: 60px;
+}
+.picture7>div>p
+{
+	font-size: 30px;
+	color: #444444;
+}
+.picture7>div :last-child
+{
+	font-size: 18px;
+	padding-top: 20px;
+}
+
+
+.picture_3
+{
+	height: 1150px;
+	background: url(../img/product/intro_perfor.jpg) no-repeat;
+	background-position: center bottom; 
+	background-color: #FAFAFA;
+}
+
+
+
+
+
+.Table
+{
+	width: 100%;
+	background-color: #FAFAFA;
+}
+
+.Table>div
+{
+	width: 1226px;
+	height: 500px;
+	margin: 0px auto;
+	background-color: #FAFAFA;
+}
+.Table table
+{
+	width: 1210px;
+	height: 500px;
+	margin: 0px auto;
+	text-align: center;
+	border-collapse: collapse;
+}
+.Table td
+{
+	font-size: 14px;
+	color: #696969;
+	border: 1px solid #aaa;
+}
+.Table tr>td:last-child
+{
+	border-right: none;
+	
+}
+.Table tr>td:first-child
+{
+	border-left: none;
+}
+.Table tr:first-child>td
+{
+	border-top: none;
+}
+.Table tr:last-child>td
+{
+	border-bottom: none;
+}
+.Table p
+{
+	font-size: 30px;
+	color: #696969;
+}
+
+.picture_4
+{
+	width: 100%;
+	height: 800px;
+	margin: 0px auto;
+	background: url(../img/product/intro_miui_s.jpg) no-repeat;
+	background-position: center bottom; 
+}
+.picture_4>div>p
+{
+	color: #696969;
+}
+
+.Images
+{
+	width: 100%;
+	background-color: #FAFAFA;
+}
+.Images>div
+{
+	width: 1226px;
+	margin: 0px auto;
+	text-align: center;
+}
+.Images>div>img
+{
+	margin-top: 80px;
+	width: 322px;
+	height: 475px;
+}
+.Images>div>div>span
+{
+	width: 44px;
+	height: 44px;
+	display: inline-block;
+	border-radius: 22px;
+	margin: 20px 20px;
+	cursor: pointer;
+}
+.Images>div>div>.spanc
+{
+	border:#f60 solid 1px;
+}
+.Images>div>div>span:first-child
+{
+	background-color: #E1D4C6;
+}
+.Images>div>div>span:nth-child(2)
+{
+	background-color: #B0B0B0;
+}
+.Images>div>div>span:last-child
+{
+	background-color:#F0F0F0 ;
+}
+
+
+.tiyan
+{
+	width: 100%;
+	margin: 0px auto;
+	position: relative;
+}
+.tiyan>.tiyan1
+{
+	width: 100%;
+	height: 300px;
+	margin: 0px auto;
+	background: url(../img/product/cs.png) no-repeat;
+	background-position: center;
+}
+.tiyan>.tiyan2
+{
+	position: absolute;
+	z-index: 9;
+}
+.tiyan>.tiyan1:hover
+{
+	opacity: 0.9;
+	-moz-transition: opacity .3s ease-in-out;
+}
+
+.Price
+{
+	width: 1226px;
+	margin: 20px auto;
+}
+.Price table
+{
+	width: 1226px;
+	height: 100px;
+	text-align:center ;
+	border-collapse: collapse;
+}
+.Price td
+{
+	border-right: 1px solid #aaa;
+}
+.Price tr>td:last-child
+{
+	border-right: none;
+}
+.Price tr:first-child>td
+{
+	font-size: 16px;
+}
+.Price tr:last-child>td
+{
+	font-size: 14px;
+	color: #FF6700;
+}
+.last
+{
+	width: 100%;
+	height: 200px;
+	background-color: #eee;
+}
+.beijing
+{
+	width: 1226px;
+	margin: 0px auto;
+	padding-top: 50px;
+	padding-left: 60px;
+}
+.beijing>p
+{
+	color: #696969;
+	line-height: 150%;
+}
+.beijing>p a
+{
+	color: #696969;
+	text-decoration: underline;
+}
+
+
+
+
+
+/*****************************************************************************/
+
+
+.Zong
+{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.6);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 99;
+	display:none;
+}
+.clstan
+{
+	width: 650px;
+	height: 418px;
+	background-color: #fff;
+	border-radius:2px ;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 999;
+	margin-left: -300px;
+	margin-top: -200px;
+}
+.clstan>div:first-child
+{
+	width: 650px;
+	height: 60px;
+	background-color: #f5f5f5;
+}
+.jixing
+{
+	width: 608px;
+	height: 60px;
+	line-height: 60px;
+	font-size: 18px;
+	color: #333;
+	margin: 0px auto;
+	display: flex;
+	justify-content: space-between;
+}
+.jixing>span
+{
+	cursor: pointer;
+}
+.jixing>span:hover
+{
+	color: #FF6700;
+}
+.List
+{
+	width: 650px;
+	margin: 0px auto;
+}
+.Zong table
+{
+	width: 608px;
+	height: 200px;
+	margin: 0px auto;
+	font-size: 14px;
+	color: #696969;
+	border-collapse: collapse;
+}
+.List>table td
+{
+	border-bottom: 1px solid #ddd;
+}
+.List>table span
+{
+	cursor: pointer;
+}
+.List>div
+{
+	width: 608px;
+	margin: 20px auto;
+	font-size: 12px;
+	color: #696969;
+}
+.List>div>a
+{
+	color: #444;
+}
+.List>div>a:hover
+{
+	color: #ff6700;
+}
+.clstan>div:last-child
+{
+	width: 335px;
+	margin: 0px auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+
+/*****************************************************************************/
+
+
+
+
+
+
+
+
+
+
+

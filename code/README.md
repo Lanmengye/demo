@@ -1,8 +1,6 @@
-# demo
-用于学习C#、web前端知识的实例项目、实战练习与学习笔记
 ## SportsStore项目
    SportsStore是参照《精通ASP.NET MVC5》一书编写的一个实例项目，主要用于熟悉ASP.NET MVC5。
 ## Log项目
    Log是为熟悉c#文件操作，同时为了记录日志而写的一款基于WinForm软件。
-## notes
-   notes用于存放学习笔记文档的文件夹
+## mi项目
+   mi是学习html5+css3+javascript时模仿小米官网和小伙伴们用html5、css3与原生javascript写的静态网页项目

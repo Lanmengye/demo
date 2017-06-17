@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>小米Max立即购买-小米商城</title>
+		<link rel="stylesheet" href="css/purchase.css" />
+		<link rel="stylesheet" href="css/css02/ini.css" />
+		<link rel="stylesheet" href="css/css04/icon/icon.css" />
+		<link rel="stylesheet" href="css/css04/icon1/icon1.css" />
+		<link rel="stylesheet" href="css/css02/footer.css" />
+		<link rel="stylesheet" href="css/css02/icont/iconfont.css" />
+		<script type="text/javascript" src="js/purchase.js" ></script>
+	</head>
+	<body>
+			<!-------------------------------顶部-------------------------------------->
+		<header>
+			<div class="ding">
+				<div>
+					<a href="index.html"><img src="img/purchase/mi.png"/></a>
+				</div>
+				<ul>
+					<li>
+						<div><a href="#">1122283135<b><i class="iconfont">&#xe81c;</i></b></a></div>
+						<ul>
+							<li><a href="#">个人中心</a></li>
+							<li><a href="#">评价晒单</a></li>
+							<li><a href="#">我的喜欢</a></li>
+							<li><a href="#">小米账户</a></li>
+							<li><a href="#">退出登录</a></li>
+						</ul>
+					</li>
+					<li><a href="###">我的订单</a></li>
+				</ul>
+			</div>
+		</header>
+		
+		<div id="daogou">
+			<div class="box">
+				<span>购买小米Max</span>
+				<a href="#">立即购买</a>				
+			</div>
+		</div>
+		<!----------------------------列表--------------------------------->
+		<div class="list">
+			<a href="#"><div>红米Note3</div></a>
+			<a href="#"><div>红米手机3S</div></a>
+			<a href="#"><div>小米手机5</div></a>
+			<a href="#"><div>小米Max</div></a>
+			<a href="#"><div>小米手机4c</div></a>
+			<a href="#"><div>红米手机3</div></a>
+			<a href="#"><div>对比手机</div></a>
+		</div>
+		
+		<!----------------------------购买详情--------------------------------->
+		<form name="buy1" action="recommend.html" method="get">
+		<div class="goumai">
+			<img id="img01" src="img/purchase/main.jpg" width="480" height="480"/>
+			<div>
+				<div class="goumai01">
+					<div>购买小米Max <span>1499元起</span></div>
+					<span><a href="#">深入了解产品&gt;</a></span>
+				</div>
+				
+				<div class="goumai02">
+					<div class="goumai02_01">
+						<p>1.选择版本</p>
+						<input type="radio" name="rdbanben" id="rdi1" /><label for="rdi1" class="lbb" onclick="xzbanben(this)">全网通 3GB内存+32GB容量</label>
+						<input type="radio" name="rdbanben" id="rdi2" /><label for="rdi2" class="lbb" onclick="xzbanben(this)">全网通 3GB内存+64GB容量</label>
+						<input type="radio" name="rdbanben" id="rdi3" /><label for="rdi3" class="lbb" onclick="xzbanben(this)">全网通 4GB内存+128GB容量</label>
+					</div>
+					
+					<div class="goumai02_01 yanse">
+						<p>2.选择颜色</p>
+						<input type="radio" name="rdyanse" id="rdi4" /><label for="rdi4" onclick="xzyanse(this ,'img/purchase/jin.jpg')"><img src="img/purchase/icon-jin.png"/><span>金色</span></label>
+						<input type="radio" name="rdyanse" id="rdi5" /><label for="rdi5" onclick="xzyanse(this, 'img/purchase/yin.jpg')"><img src="img/purchase/icon-yin.jpg"/><span>银色</span></label>
+					</div>
+					
+					<div id="taozhuang" class="goumai02_02">
+						<p>3.添加特惠配件套装</p>
+						<div>
+							<input type="radio" name="rdtaozhuang" id="rdi6"/>
+							<label for="rdi6"  class="label1" onclick="xztaozhuang(this);">
+								<p>必备套装<br/>89元 <span>省18 元</span></p>
+							</label>
+							
+							<input type="radio" name="rdtaozhuang" id="rdi7" />
+							<label for="rdi7" onclick="xztaozhuang(this);" >
+								<p>实用套装<br/>139元 <span>省20.5 元</span></p>
+							</label>
+							
+							<input type="radio" name="rdtaozhuang" id="rdi8" />
+							<label for="rdi8"  onclick="xztaozhuang(this);">
+								<p>全能套装<br/>225元 <span>省21 元</span></p>
+							</label>
+							
+							<input type="radio" name="rdtaozhuang" id="rdi9" />
+							<label for="rdi9" onclick="xztaozhuang(this);">
+								<p>裸机<br/><span>不享受优惠</span></p>
+							</label>
+						</div>
+						
+						<div class="goumai02_02_a">
+							<ul>
+								<li>
+									<img src="img/purchase/tiemo140x140.jpg"/>
+									<p>标准高透贴膜 透明</p>
+								</li>
+								<li>
+									<img src="img/purchase/hei140x140.jpg"/>
+									<p>小米活塞耳机 基础版</p>
+									<ul>		
+										<li><img src="img/purchase/hei140x140.jpg" onclick="changeimage(this);"/></li>
+										<li><img src="img/purchase/bai140x140.jpg" onclick="changeimage(this);"/></li>
+										<li><img src="img/purchase/zi140x140.jpg" onclick="changeimage(this);"/></li>
+										<li><img src="img/purchase/red140x140.jpg" onclick="changeimage(this);"/></li>
+										<li><img src="img/purchase/green140x140.jpg" onclick="changeimage(this);"/></li>
+									</ul>
+								</li>
+								<li>
+									<img src="img/purchase/T18EWQBjWT1RXrhCrK!140x140.jpg"/>
+									<p>智能显示保护套</p>
+									<ul>
+										<li><img src="img/purchase/T18EWQBjWT1RXrhCrK!140x140.jpg" onclick="changeimage(this);"/></li>
+										<li><img src="img/purchase/T1JzxQBydv1RXrhCrK!140x140.jpg" onclick="changeimage(this);"/></li>
+										<li><img src="img/purchase/T1XVWjBCYv1RXrhCrK!140x140.jpg" onclick="changeimage(this);"/></li>
+										<li><img src="img/purchase/T1k4CQByEv1RXrhCrK!140x140.jpg" onclick="changeimage(this);"/></li>
+									</ul>
+								</li>
+							</ul>
+							
+							<ul>
+								<li>
+									<img src="img/purchase/tiemo140x140.jpg"/>
+									<p>标准高透贴膜 透明</p>
+								</li>
+								<li>
+									<img src="img/purchase/2 140x140.jpg"/>
+									<p>小米胶囊耳机</p>
+									<ul>		
+										<li><img src="img/purchase/2 140x140.jpg" onclick="changeimage(this);"/></li>
+										<li><img src="img/purchase/1 140x140.jpg" onclick="changeimage(this);"/></li>
+									</ul>
+								</li>
+								<li>
+									<img src="img/purchase/T18EWQBjWT1RXrhCrK!140x140.jpg"/>
+									<p>智能显示保护套</p>
+									<ul>
+										<li><img src="img/purchase/T18EWQBjWT1RXrhCrK!140x140.jpg" onclick="changeimage(this);"/></li>
+										<li><img src="img/purchase/T1JzxQBydv1RXrhCrK!140x140.jpg" onclick="changeimage(this);"/></li>
+										<li><img src="img/purchase/T1XVWjBCYv1RXrhCrK!140x140.jpg" onclick="changeimage(this);"/></li>
+										<li><img src="img/purchase/T1k4CQByEv1RXrhCrK!140x140.jpg" onclick="changeimage(this);"/></li>
+									</ul>
+								</li>
+								<li>
+									<img src="img/purchase/T1COAjB7WT1RXrhCrK!140x140.jpg"/>
+									<p>指环式防滑手机支架</p>
+									<ul>		
+										<li><img src="img/purchase/T1COAjB7WT1RXrhCrK!140x140.jpg" onclick="changeimage(this);"/></li>
+										<li><img src="img/purchase/T1j_D_BQWT1RXrhCrK!140x140.jpg" onclick="changeimage(this);"/></li>
+									</ul>
+								</li>
+							</ul>
+							
+							<ul>
+								<li>
+									<img src="img/purchase/tiemo140x140.jpg"/>
+									<p>标准高透贴膜 透明</p>
+								</li>
+								<li>
+									<img src="img/purchase/2 140x140.jpg"/>
+									<p>小米胶囊耳机</p>
+									<ul>		
+										<li><img src="img/purchase/2 140x140.jpg" onclick="changeimage(this);"/></li>
+										<li><img src="img/purchase/1 140x140.jpg" onclick="changeimage(this);"/></li>
+									</ul>
+								</li>
+								<li>
+									<img src="img/purchase/T18EWQBjWT1RXrhCrK!140x140.jpg"/>
+									<p>智能显示保护套</p>
+									<ul>
+										<li><img src="img/purchase/T18EWQBjWT1RXrhCrK!140x140.jpg" onclick="changeimage(this);"/></li>
+										<li><img src="img/purchase/T1JzxQBydv1RXrhCrK!140x140.jpg" onclick="changeimage(this);"/></li>
+										<li><img src="img/purchase/T1XVWjBCYv1RXrhCrK!140x140.jpg" onclick="changeimage(this);"/></li>
+										<li><img src="img/purchase/T1k4CQByEv1RXrhCrK!140x140.jpg" onclick="changeimage(this);"/></li>
+									</ul>
+								</li>
+								<li>
+									<img src="img/purchase/shouhuan140x140.jpg"/>
+									<p>小米手环 光感版</p>
+								</li>
+							</ul>
+							<ul>
+								<li></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				
+				<div>
+					<span>您选择了以下产品:</span>
+					<p>小米Max <span id="banben">全网通 3GB内存+32GB容量</span> <span id="yanse">金色</span> <span id="jiage">1499</span>元</p>
+				</div>
+				<div id="next">下一步</div>
+				<div id="lijigoumai">
+					<input type="submit" name="sumt" id="submit1" /><label for="submit1">立即购买</label>
+				</div>
+			</div>
+		</div>
+		</form>
+		
+		<!----------------------------详细图片介绍--------------------------------->
+		<hr />
+		<div class="picture1">
+			<a href="#"><img src="img/purchase/shenruliaojie.jpg"></a>
+			<div class="clsDivFu">
+				<img src="img/purchase/left1.png" 
+					onmouseover="Change(this , 'img/purchase/left2.png' );"
+					onmouseout="Change(this , 'img/purchase/left1.png' );"
+					onclick=" Previous(this); " />
+				
+				<img onclick="chao();" src="img/purchase/lunbo-1.jpg" onclick="aaa()"/>
+				
+				<img src="img/purchase/right1.png"
+					onmouseover="Change(this , 'img/purchase/right2.png' );"
+					onmouseout="Change(this , 'img/purchase/right1.png' );" 
+					onclick="Next(this);" />
+			</div>
+		</div>
+		
+		<hr />
+		
+		<div class="picture2">
+			<a href="#"><img src="img/purchase/yiwaibao.jpg" /></a>
+		</div>
+		
+		<!-------------------------------详细参数-------------------------------------->
+		<div class="canshu">
+			<div onclick="changes()">了解小米Max参数<i class="iconfont icon-1">&#xe63c;</i></div>
+			<div id="jieshao">
+				<div class="canshu1">
+					<div>
+						<div>处理器</div>
+						<p>骁龙650 最高主频 1.8GHz</p>
+						<p>Adreno 510 图形处理器 600MHz</p>
+						<p>骁龙652 最高主频 1.8GHz </p>
+						<p>Adreno 510 图形处理器 600MHz</p>
+					</div>
+					<div>
+						<div>内存 / 存储</div>
+						<p>3GB 内存+32GB 机身存储</p>
+						<p>3GB 内存+64GB 机身存储</p>
+						<p>4GB 内存+128GB 机身存储</p>
+						<p>最大支持128GB存储卡扩展</p>
+					</div>
+					<div>
+						<div>显示屏</div>
+						<p>6.44英寸 省电超大屏</p>
+						<p>450nit 高亮度</p>
+						<p>1920 x 1080 分辨率，342 PPI，1000:1 对比度</p>
+						<p>72% NTSC色域</p>
+						<p>支持阳光屏，强烈阳光下清晰可见屏幕内容</p>
+						<p>支持夜光屏</p>
+						<p>支持护眼模式</p>
+						<p>支持色温调节</p>
+					</div>
+				</div>
+				
+				<div class="canshu1">
+					<div>
+						<div>指纹识别</div>
+						<p>背部指纹识别</p>
+						<p>指纹修正系统</p>
+						<p>支持小米钱包支付</p>
+						<p>支持查看私密文件</p>
+					</div>
+					<div>
+						<div>1600万后置相机</div>
+						<p>5片式镜头，ƒ/2.0 光圈</p>
+						<p>双色温闪光灯</p>
+						<p>支持 PDAF 相位对焦</p>
+						<p>暗光画质增强技术</p>
+						<p>HDR高动态范围调节技术</p>
+						<p>全景模式</p>
+						<p>连拍模式</p>
+						<p>面部识别功能</p>
+						<p>实时滤镜拍照</p>
+					</div>
+					<div>
+						<div>500万像素前置相机</div>
+						<p>第二代36级智能美颜，自拍实时美颜</p>
+						<p>ƒ/2.0 大光圈，85°大广角</p>
+						<p>视频通话实时美颜</p>
+						<p>倒计时自拍</p>
+						<p>面部识别功能</p>
+						<p>支持魔镜功能，实时评测颜值</p>
+					</div>
+				</div>
+				
+				<div class="canshu1">
+					<div>
+						<div>网络支持</div>
+						<p>全网通3.0 双卡双待</p>
+						<p>三选二卡槽</p>
+						<p>支持 Nano-SIM 卡 / Micro-SIM卡 / Micro-SD 扩展存储卡</p>
+						<p>双卡使用说明</p>
+						<p>主卡移动联通电信4G+ / 4G / 3G / 2G，副卡最高支持联通3G</p>
+					</div>
+					<div>
+						<div>无线连接</div>
+						<p>802.11 ac 双频无线网络</p>
+						<p>具备 MU-MIMO 技术</p>
+						<p>WiFi Display</p>
+						<p>WiFi Direct</p>
+						<p>蓝牙4.2 无线技术</p>
+						<p>蓝牙HID</p>
+					</div>
+					<div>
+						<div>传感器</div>
+						<p>红外</p>
+						<p>陀螺仪</p>
+						<p>加速感应器</p>
+						<p>距离感应器</p>
+						<p>环境光传感器</p>
+						<p>电子罗盘</p>
+					</div>
+				</div>
+				
+				<div class="canshu1">
+					<div>
+						<div>GPS</div>
+						<p>GPS</p>
+						<p>AGPS</p>
+						<p>GLONASS</p>
+						<p>北斗定位</p>
+					</div>
+					<div>
+						<div>电池容量</div>
+						<p>额定容量4760mAh</p>
+						<p>典型容量4850mAh</p>
+						<p>内置电池，免更换</p>
+						<p>5V / 2A 充电</p>
+					</div>
+					<div>
+						<div>可选版本</div>
+						<p>3GB 内存 + 32GB 闪存 1499元</p>
+						<p>3GB 内存 + 64GB 闪存 1699元</p>
+						<p>4GB 内存 + 128GB 闪存 1999元</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="CSA">
+			<div>款款出色<br />随小米Max购买配件免费送货</div>
+			<div>
+				<div>
+					<p><a href="#">智能显示保护套</a></p>
+					<div><a href="#">59<span>元</span></a></div>
+					<div><a href="#"><img src="img/purchase/T1k4CQByEv1RXrhCrK.jpg"/></a></div>
+				</div>
+				<div>
+					<p><a href="#">标准高透贴膜</a></p>
+					<div><a href="#">19<span>元</span></a></div>
+					<div><a href="#"><img src="img/purchase/T1y7JQBbCT1RXrhCrK.jpg" /></a></div>
+					</a>
+				</div>	
+				<div>	
+					<p><a href="#">小米手环 光感版</a></p>
+					<div><a href="#">99<span>元</span></a></div>
+					<div><a href="#"><img src="img/purchase/shouhuan.jpg" /></a></div>
+				</div>
+				<div>	
+					<p><a href="#">小米胶囊耳机</a></p>
+					<div><a href="#">69<span>元</span></a></div>
+					<div><a href="#"><img src="img/purchase/1.jpg" /></a></div>
+				</div>
+				<div>	
+					<p><a href="#">小米圈铁耳机</a></p>
+					<div><a href="#">99<span>元</span></a></div>
+					<div><a href="#"><img src="img/purchase/T1ycK_BjYv1RXrhCrK.jpg"/></a></div>
+				</div>
+				<div>	
+					<p><a href="#">小米随身蓝牙音箱</a></p>
+					<div><a href="#">69<span>元</span></a></div>
+					<div><a href="#"><img src="img/purchase/T1._C_BKAv1RXrhCrK.jpg" /></a></div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="wangdian"><a href="#"><img src="img/purchase/detail-6.jpg"></a></div>
+		
+		<!------------------------------ 描述：尾页区------------------------------------>
+		<footer>
+			<div class="first">
+				<div class="firstson01 box">
+					<a href="#"><i class="iconfont">&#xe614;</i>1小时快修服务</a >|
+					<a href="#"><i class="iconfont">&#xe606;</i>7天无理由退货</a>|
+					<a href="#"><i class="iconfont">&#xe605;</i>15天免费换货</a >|
+					<a href="#"><i class="iconfont">&#xe64d;</i>满150元包邮</a >|
+					<a href="#"><i class="iconfont">&#xe613;</i>520余家售后网点</a >
+				</div>
+				<div class="firstson02 box">
+					<ul class="left">
+						<li class="layer01 left"><span>帮助中心</span>
+							<ul>
+								<li><a href="#">账户管理</a></li>
+								<li><a href="#">购物指南</a></li>
+								<li><a href="#">订单操作</a></li>
+							</ul>
+						</li>
+						<li class="layer01 left"><span>服务支持</span>
+							<ul>
+								<li><a href="#">售后政策</a></li>
+								<li><a href="#">自助服务</a></li>
+								<li><a href="#">相关下载</a></li>								
+							</ul>
+						</li>
+						<li class="layer01 left"><span>线下门店</span>
+							<ul>
+								<li><a href="#">小米之家</a></li>
+								<li><a href="#">服务网点</a></li>
+								<li><a href="#">零售网点</a></li>								
+							</ul>
+						</li>
+						<li class="layer01 left"><span>关于小米</span>
+							<ul>
+								<li><a href="#">了解小米</a></li>
+								<li><a href="#">加入小米</a></li>
+								<li><a href="#">联系我们</a></li>								
+							</ul>
+						</li>
+						<li class="layer01 left"><span>关注我们</span>
+							<ul>
+								<li><a href="#">新浪微博</a></li>
+								<li><a href="#">小米部落</a></li>
+								<li><a href="#">官方微信</a></li>								
+							</ul>
+						</li>
+						<li class="layer01 left"><span>特色服务</span>
+							<ul>
+								<li><a href="#">F 码通道</a></li>
+								<li><a href="#">小米移动</a></li>
+								<li><a href="#">防伪查询</a></li>								
+							</ul>
+						</li>						
+					</ul>					
+					<div class="firstson02_02 right">
+						<span>400-100-5678</span>
+						<div>周一至周日 8:00-18:00</div>
+						<div>（仅收市话费）</div>
+						<a><i class="iconfont">&#xe72c;</i>24小时在线客服</a>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+			<div class="second">
+				<div class="secondson box">
+					<img src="img02/footer/mi.png" class="left"/>
+					<div class="left">
+						<a href="#">小米网</a>|
+						<a href="#">MIUI</a>|
+						<a href="#">米聊</a>|
+						<a href="#">多看书城</a>|
+						<a href="#">小米路由器</a>|
+						<a href="#">视频电话</a>|
+						<a href="#">小米后院</a>|
+						<a href="#">小米天猫店</a>|
+						<a href="#">小米淘宝直营店</a>|
+						<a href="#">小米网盟</a>|
+						<a href="#">问题反馈</a>|
+						<a href="#">Select Region</a>
+						<p>
+							&copy;mi.com 京ICP证110507号 京ICP备10046444号 
+							<a href="#" >京公网安备11010802020134号</a>
+							<a href="#" >京网文[2014]0059-0009号</a><br />
+							违法和不良信息举报电话：185-0130-1238，本网站所列数据，除特殊说明，所有数据均出自我司实验室测试
+						</p>
+					</div>
+					<div class="right">
+						<a href="#"><img src="img02/footer/seal.png" width="85" height="28"/></a>
+						<a href="#"><img src="img02/footer/v-logo-1.png" /></a>
+						<a href="#"><img src="img02/footer/v-logo-2.png" /></a>
+						<a href="#"><img src="img02/footer/v-logo-3.png" /></a>
+					</div>
+					<div class="clear"></div>
+					<span>探索黑科技，小米为发烧而生！</span>
+				</div>
+			</div>
+		</footer>
+<!------------------------------ /描述：尾页区----------------------------------->
+		
+	</body>
+</html>

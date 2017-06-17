@@ -1,0 +1,377 @@
+************************************网页正文第一部分***********************************/
+/**************************网页正文第一部分背景设置****************************/
+.section1
+{
+	background-color: #fff;
+	width: 100%;
+	height: 1200px;	
+}
+/*****************网页正文第一部分第一小节（导航栏）总体设置****************/
+nav
+{
+	display: flex;
+	vertical-align: middle;
+	height: 100px;
+	position: relative;
+}
+/***************LOGO+图片设置************/
+nav>div:first-child
+{
+	width: 240px;
+	margin-top: 20px;
+}
+nav>div:first-child>img
+{
+	height: 55px;
+	cursor: pointer;
+}
+/****************导航菜单设置*************/
+nav ul
+{
+	display: flex;
+}
+nav>ul
+{
+	width: 650px;
+	padding:10px 10px;
+}
+/***************菜单项设置*************/
+nav>ul>li
+{
+	height: 100%;
+	font-size: 16px;
+	cursor: pointer;
+	padding: 30px 10px;
+}
+nav>ul>li>span:hover,nav>ul>li>a:hover
+{
+	color: #ff6700;
+}
+/***************二级菜单设置*********/
+.menu01>ul
+{
+	position: absolute;
+	top:100px;
+	left:0px;
+	height: 0px;
+	overflow: hidden;
+}
+.menu01:hover>ul
+{
+	border-top: 1px solid #ccc;
+	height:auto;/*230px*/
+	-moz-transition: height 0.3s ease-in-out ; /**??????******************/
+	box-shadow: 1px 1px 3px  #ccc;
+	background-color: #fff;	
+	z-index: 6;
+}
+.menu01>ul>li>div
+{
+	background-color:#fff;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.menu01>ul>li>div>div
+{
+	font-size: 12px;
+	padding-bottom: 5px;
+}
+.menu01 a>img
+{
+	padding:0px 20px;
+	border-right: 1px solid #ccc;	
+	display: inline-block;
+	margin: 20px 0px;
+}
+ul>.menu01:nth-child(5) a>img
+{
+	width: 160px;
+	height: 110px;
+} 
+.menu01>ul>li:last-child a>img
+{
+	border: none;
+}
+/**************搜索栏设置**************/
+nav>table
+{
+	display: inline-block;
+	margin-top: 25px;
+	margin-left: 65px;
+	border-collapse: collapse;
+}
+nav>table td
+{
+	border: 1px solid #ccc;
+}
+input[type="text"]
+{
+	border: none;
+	display: inline-block;
+	height: 46px;
+	width: 248px;
+	padding: 0px;
+	text-indent: 10px;
+}
+nav td:last-of-type
+{
+	height: 46px;
+	line-height: 46px;
+	text-align: center;
+	cursor: pointer;
+}
+nav td:last-of-type:hover
+{
+	background-color: #ff6700;
+}
+td:last-of-type:hover>.sousuo
+{
+		color: #fff;
+}
+td:last-of-type>.sousuo
+{
+	font-size: 24px;
+	color: #999;
+}
+
+/************************网页正文第一部分第二小节总体设置*********************/
+.section12
+{
+	position: relative;
+	margin-bottom: 15px;
+}
+/**************左侧导航菜单设置**************/
+.section12>div:first-child
+{
+		width:235px;
+		height:400px;
+		padding:30px 0px ;
+		background-color: rgba(102, 102 ,102 ,0.6);
+		margin-bottom: 15px; 
+		position: absolute;
+}		
+/*************菜单项设置*************/
+.section12 li>span:first-child
+{
+	margin: 0px;
+	padding: 0px;
+	display:block;
+	width: 205px;
+	height: 40px;
+	line-height: 40px;
+	padding-left: 30px;
+}
+.section12 li>span:first-child>a
+{
+	font-size: 14px;
+	color:#fff;
+}
+.section12 li>span:first-child>.you
+{
+	position: absolute;
+	right: 30px;
+	font-size: 20px;
+	color: #999;
+	display: inline-block;
+	padding-top: 2px;
+}
+.section12>div>ul>li:hover
+{
+	background-color: #FF6700;
+}
+/**********二级菜单显示与隐藏******/
+
+.leftmenu
+{
+	width: 265px;
+	height:0px;
+	overflow: hidden;
+	background-color: #fff;
+}
+li:hover>.leftmenu
+{  
+	width: 265px;
+	height: 460px;
+	position:absolute ;
+	top:0px;
+	left: 235px;
+	border-top: 1px solid #ccc;
+	box-shadow: 1px 1px 3px  #ccc;
+}
+/**********二级菜单内容设置********/
+.leftmenu>li
+{
+	height: 76px;
+	line-height: 76px;
+	background-color: #fff;
+}
+.leftmenu>li>a>*
+{
+	vertical-align: middle;
+}
+.leftmenu>li>a>span:nth-child(3)
+{
+	color: #ff6700;
+}
+.leftmenu>li>a>span:nth-child(3):hover
+{
+	color: #fff;
+	background-color: #ff6700;
+}
+.leftmenu>li>a>span:hover
+{
+	color: #ff6700;
+}
+.leftmenu>li img
+{
+	padding: 0px 10px;
+}
+.leftmenu>li img+span
+{
+	display: inline-block;
+	width: 130px;
+}
+
+.leftmenu>li img+span+span
+{
+	padding: 5px 20px;
+	font-size: 14px;
+	border: 1px solid #ff6700;
+}
+/*******************换图选项条设置*******************/
+.section12 .bar
+{
+	height: 15px;
+	line-height: 15px;
+	position:absolute;
+	bottom: 20px;
+	right: 20px;
+}
+.section12 .bar>span
+{
+	vertical-align: middle;
+	display: inline-block;
+	margin-right: 25px;
+	width: 10px;
+	height: 10px;
+	background-color:rgba(102,102,102,0.6);
+	border-radius: 7px;
+	cursor:pointer;
+	border: 2px solid #999;
+}
+.section12 .bar>span:hover
+{
+	background-color: #FF6700;
+}
+.section12 .bar>.spanc
+{
+	cursor: auto;
+	background-color: rgba(255,255,255,0.8);
+	border: 2px solid #999;
+}
+
+
+
+
+
+
+/************************网页正文第一部分第三小节总体设置*********************/
+.section13{justify-content: space-between;margin-bottom: 15px;}
+.section13>a>img{width:315px; height:170px;}
+.section13>table:first-child
+{
+	width:235px;
+	height:170px;
+	border: solid #333 1px;
+	border-collapse: collapse;
+}
+.section13 td
+{
+	width: 78px;
+	background-color: #666;
+	border: solid #aaa 1px;
+	
+}
+.section13 td>a
+{
+	display: block;
+	color: #999;
+	text-align: center;
+}
+.section13 td>a:hover
+{
+	color: #fff;
+}
+.section13 td>a>i
+{
+	display: block;
+	font-size: 24px;
+}
+/************************网页正文第一部分第四小节总体设置*********************/
+/***************右侧箭头设置*************/
+.section14>.right,.section25>.right
+{
+	width: 70px;
+	height:58px ;
+	line-height: 58px;
+}
+.section14>.right>span,.section25>.right>span
+{
+	display: inline-block;
+	width:33px;
+	height: 23px;
+	line-height: 23px;
+	border: 1px solid #aaa;
+	vertical-align: middle;
+	text-align: center;
+	font-size: 16px;
+	font-weight: bold;
+}
+.right>.checked/*,.section25>.right>.checked*/
+{
+	color: #aaa;
+}
+.section25>.right>span:not(.checked),.section14>.right>span:not(.checked)
+{
+	color: #666;
+	cursor: pointer;
+}
+.section25>.right>span:not(.checked):hover,.section14>.right>span:not(.checked):hover
+{
+	color: #ff6700;
+}
+.section14>.right>span:first-child,.section25>.right>span:first-child
+{
+	border-right: none;
+}
+/***************内容显示与隐藏设置**************/
+.section14>div:last-child>div:not(:first-child),.section25>div:last-child>div:not(:first-child)
+{
+	display: none;
+}
+/***************商品设置信息**************/
+.section14 .star
+{
+	width: 195px;
+	padding: 20px;
+	background-color: #eee;
+}
+.section14 .star>a>img
+{
+	width:195px;
+}
+.section14 .star>*
+{
+	display: block;
+	margin-bottom: 10px;
+	text-align: center;
+}
+.section14 .star>.gray
+{
+	font-size: 12px;
+	color: #ccc;
+}
+
+
+

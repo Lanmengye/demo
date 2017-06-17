@@ -1,0 +1,66 @@
+.flex1
+{
+	display: flex;
+	flex-direction:column ;
+	justify-content: space-between;
+	height: 608px;
+	position: relative;
+	margin-top: 4px;
+}
+.flex1>a
+{
+	height: 300px;
+}
+.flex1>a:first-child:hover,.last>div:first-child:hover
+{
+	position:absolute;
+	top:-4px;
+	box-shadow: 5px 2px 5px  #bbb;
+}
+.flex1>a:last-child:hover,.last>div:last-child:hover
+{
+	position:absolute;
+	bottom:4px;
+	box-shadow: 5px 2px 5px  #bbb;
+}
+.flex2
+{
+	height: 608px;
+	width:980px;
+	margin-top: 4px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.flex2>*
+{
+	margin-top: 0px;
+}
+.flex2>.container:hover
+{
+	margin-top: -4px;
+}
+.last
+{
+	height:300px;
+	position: relative;
+	display: flex;
+	flex-direction:column ;
+	justify-content: space-between;
+}
+.last>div
+{
+	height: 145px;
+	margin-top:0px
+}
+.gap
+{
+	width: 980px;
+	height: 8px;
+	background-color:#eee;
+}
+
+
+
+
+

@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>填写订单</title>
+		<link rel="stylesheet" href="css/css02/ini.css" />
+		<link rel="stylesheet" href="css/cssorder/header_order.css" />
+		<link rel="stylesheet" href="css/cssorder/icon1/icon.css" />
+		<link rel="stylesheet" href="css/cssorder/text.css" />
+		<link rel="stylesheet" href="css/css02/footer.css" />
+		
+		<link rel="stylesheet" href="css/cssorder/iconc/iconc.css" />
+		<link rel="stylesheet" href="css/cssorder/icon/icon.css" />
+		<link rel="stylesheet" href="css/css02/icont/iconfont.css" />
+		<script type="text/javascript" src="js/order.js" ></script>
+	</head>
+	
+	
+	<body>
+			<!--------------------------------描述：头部区------------------------------------>
+		<header>
+			<div class="ding">
+				<div class="ding1">
+					<a href="index.html"><img src="img02/footer/mi.png"/></a>
+					<span>确认订单</span>
+				</div>
+				<ul class="ding2">
+					<li>
+						<div><a href="#">1122283135<i class="iconfont">&#xe81c;</i></a></div>
+						<ul>
+							<li><a href="#">个人中心</a></li>
+							<li><a href="#">评价晒单</a></li>
+							<li><a href="#">我的喜欢</a></li>
+							<li><a href="#">小米账户</a></li>
+							<li><a href="#">退出登录</a></li>
+						</ul>
+					</li>
+					<li><a href="#">我的订单</a></li>
+				</ul>
+			</div>
+		</header>
+		<!------------------------------ /描述：头部区------------------------------------>
+		
+		
+		
+		
+		<!------------------------------ 描述：正文区------------------------------------->
+		<form id="order" name="order" action="sumbit.html"></form>
+		<div class="text">
+			<section class="box">
+				<div>
+					<p>收货地址</p>
+					<div class="shou flex">
+						<div onclick="xuanyong();" class="changyong" id="changyong">
+							<div>李四</div>
+							<div>138****4578</div>
+							<div>上海 上海市 长宁区</div>
+							<div>申亚金融大厦12楼</div>
+							<span onclick="tianjia();">修改</span>
+						</div>
+						<div onclick="tianjia();">
+							<div><i class="iconfont iconabc">&#xe634;</i></div>
+							<span>添加新地址</span>
+						</div>
+					</div>
+				</div>
+				
+				<!------------------------------ 地址弹框------------------------------------->
+		
+	<div class="zong">
+			<div class="address">
+				<form name="address" id="address"></form>
+				<input type="text" name="username" form="address" placeholder="姓名" />
+				<input type="text" name="userphone" form="address" placeholder="手机号" />
+				
+				<select id="sheng" name="sheng" class="selt1"   onchange="  AddShi();   AddXian();"></select>
+				<select id="shi" name="shi"  onchange="  AddXian(); "></select>
+				<select id="xian" name="xian" ></select>
+				
+				<input class="dizhi" type="text" name="xiangxi" form="address" placeholder="详细地址" />
+				<input type="text" name="emailnum" form="address" placeholder="邮政编码" />
+				<input type="text" name="dizhi" form="address" placeholder="地址标签" />
+				<div class="Tijiao">
+					<input onclick="baocun();" type="image" src="img02/baocun.png"/>
+					<input onclick="guanbi();" type="image" src="img02/quxiao.png"/>
+				</div>
+			</div>
+		</div>
+		
+				
+				
+				
+				<div class="center">
+					<p>支付方式</p><span class="orangered">在线支付（支持支付宝、银联、财富宝、小米支付等）</span>
+				</div>
+				<div class="center">
+					<p>配送方式</p><span class="orangered">快递配送（免运费）</span>
+				</div>
+				<div class="center">
+					<p>配送时间</p>
+					<input type="radio" name="radiotime" value="anyday" id="time01" checked/><label for="time01">不限送货时间：周一至周日</label>
+					<input type="radio" name="radiotime" value="workday" id="time02"/><label for="time02">工作日送货：周一至周五</label>
+					<input type="radio" name="radiotime" value="restday" id="time03"/><label for="time03">双休日、假日送货：周六至周日</label>
+				</div>
+				
+				<div class="receipt">
+					<p>发票</p>
+					<div>
+						<div>
+							<input type="radio" form="order" name="radiotype" value="electronic" id="type01" checked/><label for="type01" class="type01" onclick="change01(this);">电子发票（非纸质）</label>
+							<input type="radio" form="order" name="radiotype" value="paper" id="type02"/><label for="type02" class="type01" onclick="change01(this);">普通发票（纸质）</label>				
+						</div>
+						<div>
+							<div class="dianzi">电子发票法律效力、基本用途及使用规定同纸质发票。不随商品配送。<a href="#" class="orangered">什么是电子发票</a></div>	
+							<div class="zizhi">
+								<div>
+									<input type="radio" name="receipter" value="geren" id="receipter01" checked/><label for="receipter01" onclick="change01(this);">个人</label>
+									<input type="radio" name="receipter" value="danwei" id="receipter02" /><label for="receipter02" onclick="change01(this);">单位</label>
+								</div>
+								<div>
+									<div id="geren"><div>发票抬头：个人</div><div>发票内容：购买商品明细</div></div>
+									<div id="danwei"><input type="text" name="taitou"  placeholder="请输入发票抬头" /><div>发票内容：购买商品明细</div></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="goods">
+					<div><p class="left">商品及优惠券</p><span class="right"><a href="shoppingcart.html">返回购物车&gt;</a></span><div class="clear"></div></div>
+					<div>
+						<div class="left"><a href="#"><img src="img02/Mi Max30x30.jpg">小米Max全网通版 金色32GB</a></div>
+						<span class="orangered right">1499元</span>
+						<span class="right">有货</span>
+						<span class="right">1499元X1</span>
+						<div class="clear"></div>
+					</div>
+					<div>
+						<div class="left quan">
+							<div>
+								<i class="iconfont jiahao">&#xe634;</i><span onclick="dakai()">使用优惠券</span>
+							</div>
+
+						</div>
+						
+						<div class="right heji">
+							<table>
+								<tr>
+									<td>商品件数：</td>
+									<td><span>1件</span></td>
+								</tr>
+								<tr>
+									<td>金额合计：</td>
+									<td><span>1499元</span></td>
+								</tr>
+								<tr>
+									<td>活动优惠：</td>
+									<td><span>-0元</span></td>
+								</tr>
+								<tr>
+									<td>优惠券抵扣：</td>
+									<td>-<span id="dikou">0</span>元</td>
+								</tr>
+								<tr>
+									<td>运费：</td>
+									<td><span>0元</span></td>
+								</tr>
+								<tr>
+									<td>应付金额：</td>
+									<td><span id="huafei">1499</span>元</td>
+								</tr>
+							</table>
+						</div>
+						<div class="clear"></div>
+					</div>
+				</div>
+				
+				<div>
+					<div class="left"></div>
+					<a href="sumbit.html"><div class="right">去结算</div></a>
+					<div class="clear"></div>
+				</div>
+			</section>
+		</div>
+		
+		
+	
+		<!------------------------------ 优惠券弹框------------------------------------->	
+		
+		
+		<div class="youhui" id="youhui">
+			<div>
+				<span onclick="span_click(this)" class="span1">选择优惠劵</span>|
+				<span onclick="span_click(this)">输入优惠劵码</span>
+			</div>
+			<div class="youhui1">
+				<span>您暂时没有可用的优惠券</span>
+				<div>
+					<input type="text" name="tex" placeholder="请输入优惠券码" form="order"/>
+					<div id="err"></div>
+					<div>
+						<input onclick="yhq();" type="image"src="img02/1.png"/>
+						<input onclick="closea();" type="image" src="img02/2.png"/>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+
+		
+		<!------------------------------ /描述：正文区------------------------------------->
+			
+		<!------------------------------ 描述：尾页区------------------------------------>
+		<footer>
+			<div class="first">
+				<div class="firstson01 box">
+					<a href="#"><i class="iconfont">&#xe614;</i>1小时快修服务</a >|
+					<a href="#"><i class="iconfont">&#xe606;</i>7天无理由退货</a>|
+					<a href="#"><i class="iconfont">&#xe605;</i>15天免费换货</a >|
+					<a href="#"><i class="iconfont">&#xe64d;</i>满150元包邮</a >|
+					<a href="#"><i class="iconfont">&#xe647;</i>520余家售后网点</a >
+				</div>
+				<div class="firstson02 box">
+					<ul class="left">
+						<li class="layer01 left"><span>帮助中心</span>
+							<ul>
+								<li><a href="#">账户管理</a></li>
+								<li><a href="#">购物指南</a></li>
+								<li><a href="#">订单操作</a></li>
+							</ul>
+						</li>
+						<li class="layer01 left"><span>服务支持</span>
+							<ul>
+								<li><a href="#">售后政策</a></li>
+								<li><a href="#">自助服务</a></li>
+								<li><a href="#">相关下载</a></li>								
+							</ul>
+						</li>
+						<li class="layer01 left"><span>线下门店</span>
+							<ul>
+								<li><a href="#">小米之家</a></li>
+								<li><a href="#">服务网点</a></li>
+								<li><a href="#">零售网点</a></li>								
+							</ul>
+						</li>
+						<li class="layer01 left"><span>关于小米</span>
+							<ul>
+								<li><a href="#">了解小米</a></li>
+								<li><a href="#">加入小米</a></li>
+								<li><a href="#">联系我们</a></li>								
+							</ul>
+						</li>
+						<li class="layer01 left"><span>关注我们</span>
+							<ul>
+								<li><a href="#">新浪微博</a></li>
+								<li><a href="#">小米部落</a></li>
+								<li><a href="#">官方微信</a></li>								
+							</ul>
+						</li>
+						<li class="layer01 left"><span>特色服务</span>
+							<ul>
+								<li><a href="#">F 码通道</a></li>
+								<li><a href="#">小米移动</a></li>
+								<li><a href="#">防伪查询</a></li>								
+							</ul>
+						</li>						
+					</ul>					
+					<div class="firstson02_02 right">
+						<span>400-100-5678</span>
+						<div>周一至周日 8:00-18:00</div>
+						<div>（仅收市话费）</div>
+						<a><i class="iconfont">&#xe72c;</i>24小时在线客服</a>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+			<div class="second">
+				<div class="secondson box">
+					<img src="img02/footer/mi.png" class="left"/>
+					<div class="left">
+						<a href="#">小米网</a>|
+						<a href="#">MIUI</a>|
+						<a href="#">米聊</a>|
+						<a href="#">多看书城</a>|
+						<a href="#">小米路由器</a>|
+						<a href="#">视频电话</a>|
+						<a href="#">小米后院</a>|
+						<a href="#">小米天猫店</a>|
+						<a href="#">小米淘宝直营店</a>|
+						<a href="#">小米网盟</a>|
+						<a href="#">问题反馈</a>|
+						<a href="#">Select Region</a>
+						<p>
+							&copy;mi.com 京ICP证110507号 京ICP备10046444号 
+							<a href="#" >京公网安备11010802020134号</a>
+							<a href="#" >京网文[2014]0059-0009号</a><br />
+							违法和不良信息举报电话：185-0130-1238，本网站所列数据，除特殊说明，所有数据均出自我司实验室测试
+						</p>
+					</div>
+					<div class="right">
+						<a href="#"><img src="img02/footer/seal.png" width="85" height="28"/></a>
+						<a href="#"><img src="img02/footer/v-logo-1.png" /></a>
+						<a href="#"><img src="img02/footer/v-logo-2.png" /></a>
+						<a href="#"><img src="img02/footer/v-logo-3.png" /></a>
+					</div>
+					<div class="clear"></div>
+					<span>探索黑科技，小米为发烧而生！</span>
+				</div>
+			</div>
+		</footer>
+<!------------------------------ /描述：尾页区----------------------------------->
+	</body>
+</html>
